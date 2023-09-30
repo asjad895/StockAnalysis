@@ -247,7 +247,7 @@ def plot_daily_sentiment(parsed_and_scored_news, ticker):
     df = parsed_and_scored_news[['sentiment_score']].copy()
     print(df.head())
     mean_scores_d = df.resample('H').mean()
-    fig1 = px.bar(mean_scores_d, x=mean_scores_d.index, y='sentiment_score', title=f'{ticker} Daily Sentiment Scores',width=600
+    fig1 = px.bar(mean_scores_d, x=mean_scores_d.index, y='sentiment_score', title=f'{ticker} Daily Sentiment Scores',width=800
                   ,height=600)
     # Create a column for color based on sentiment_score
     mean_scores_d['color'] = mean_scores_d['sentiment_score'].apply(lambda score: 'green' if score > 0 else 'red')
