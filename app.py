@@ -171,7 +171,7 @@ def plot_hourly_sentiment(parsed_and_scored_news, ticker):
     print(parsed_and_scored_news.isna().sum())
     print("hour")
     print(parsed_and_scored_news.head())
-    mean_scores = parsed_and_scored_news.resample('H').mean()
+    mean_scores = parsed_and_scored_news.resample('60T').mean()
     # mean_scores = parsed_and_scored_news.pivot_table(index=parsed_and_scored_news.index.hour, columns=parsed_and_scored_news.index.date, values=['headline', 'neg', 'neu', 'pos', 'sentiment_score'], aggfunc='first')
     print(mean_scores)
     fig1 = px.bar(mean_scores, x=mean_scores.index, y='sentiment_score', title=f'{ticker} Hourly Sentiment Scores')
