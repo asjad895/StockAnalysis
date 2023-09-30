@@ -2,6 +2,7 @@ import time
 import base64
 import json
 import requests
+import numpy as np
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup, NavigableString
 import pandas as pd
@@ -14,6 +15,8 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 from datetime import datetime
 nltk.downloader.download('vader_lexicon')
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
 # Streamlit app
 st.set_page_config(page_title="Stock Sentiment Analysis", page_icon="random", layout="wide", initial_sidebar_state="expanded")
 # Define a function for adding a background image
@@ -39,9 +42,35 @@ def preprocess_datetime(datetime_str):
         today = datetime.today()
         time_str = datetime_str.replace("Today", "").strip()
         return today.strftime("%Y-%m-%d") + " " + time_str
+    if "Sep" in datetime_str.lower():
+        print("date k lye aya")
+    if "Oct" in datetime_str.lower():
+        datetime_str = datetime_str.replace("oct", "Oct")
+        
+    
     return datetime_str
+def convert_to_numeric_date(date_str):
+    # Check if the date starts with '20' (or any other specific year)
+    if date_str.startswith('20'):
+        return date_str  # Already in numeric format, return as is
+    
+    # Parse the date using datetime
+    date_obj = datetime.strptime(date_str, '%b-%d-%y')
+    
+    # Convert to numeric format
+    numeric_date = date_obj.strftime('%Y-%m-%d')
+    
+    return numeric_date
 
 def get_news_df(tickers):
+    """_This function will give company intro and news article for related to ticker_
+
+    Args:
+        tickers (string): Stock tickers on finviz webpage
+
+    Returns:
+        pandas df,intro:string: extracted df of new article for ticker and intro
+    """
     url = f'https://finviz.com/quote.ashx?t={tickers}'
     print(url)
     req = Request(url=url,
@@ -53,9 +82,13 @@ def get_news_df(tickers):
     # Find all <tr> tags with class="table-light3-row"
     rows = soup.find_all('tr', class_='table-light3-row')
     # Extract text under the <div> tag within each <tr>
+    extracted_text = ""
     for row in rows:
-        div_text = row.find('div').text
-        company_intro+=div_text+"\n"
+        div = row.find('div')
+        if div:
+            div_text = div.text.strip()  # Remove leading/trailing whitespace
+            extracted_text += div_text + "\n"
+    company_intro=extracted_text
     print(company_intro)
     # Initialize lists to store extracted data
     dates = []
@@ -93,11 +126,20 @@ def get_news_df(tickers):
         'time': times,
         'headline': headlines
     })
+    print(parsed_news_df['date'])
     # Fill missing dates with the last known date
     parsed_news_df['date'].ffill(inplace=True)
     print("yesy2")
+    print(parsed_news_df.columns)
+    print(parsed_news_df['date'])
+    print(parsed_news_df.head())
+    print(parsed_news_df.isna().sum())
+# Apply the function to the 'date' column
+    parsed_news_df['date'] = parsed_news_df['date'].apply(convert_to_numeric_date)
+    print(parsed_news_df.head())
     # Combine 'date' and 'time' columns into 'datetime'
     parsed_news_df['datetime'] = pd.to_datetime(parsed_news_df['date'] + ' ' + parsed_news_df['time'])
+    print("yesy6")
     parsed_news_df['date'] = parsed_news_df['datetime'].dt.date
 
     # Specify the file path where you want to save the CSV file
@@ -110,7 +152,7 @@ def get_news_df(tickers):
     print(f"DataFrame saved to {csv_file_path}")
     print("yes")
 
-    return parsed_news_df
+    return parsed_news_df,company_intro
 
 
 # Define a function for scoring news sentiment
@@ -178,25 +220,34 @@ def plot_hourly_sentiment(parsed_and_scored_news, ticker):
     print(parsed_and_scored_news.isna().sum())
     print("hour")
     print(parsed_and_scored_news.head())
-    mean_scores = parsed_and_scored_news.resample('60T').mean()
+    print(parsed_and_scored_news.dtypes)
+    print(parsed_and_scored_news.index)
+    # Assuming you have the 'parsed_and_scored_news' DataFrame
+    df = parsed_and_scored_news[['sentiment_score']].copy()
+    print(df.head())
+    mean_scores = df.resample('H').mean()
     # mean_scores = parsed_and_scored_news.pivot_table(index=parsed_and_scored_news.index.hour, columns=parsed_and_scored_news.index.date, values=['headline', 'neg', 'neu', 'pos', 'sentiment_score'], aggfunc='first')
     print(mean_scores)
+    # mean_scores = mean_scores.dt.to_pydatetime()
     fig1 = px.bar(mean_scores, x=mean_scores.index, y='sentiment_score', title=f'{ticker} Hourly Sentiment Scores')
     # Create a column for color based on sentiment_score
+    print("aaa")
     mean_scores['color'] = mean_scores['sentiment_score'].apply(lambda score: 'green' if score > 0 else 'red')
     mean_scores.dropna(subset=['sentiment_score'], inplace=True)
     # Create the line plot
     print(mean_scores)
     print("hour2")
-    fig2 = px.line(mean_scores, x=mean_scores.index, y='sentiment_score', markers=True,color='color',
-                      title=f'{ticker} Hourly Sentiment Scores (Green: Positive, Red: Negative)')
+    datetime_index = np.array(mean_scores.index)
+    fig2 = px.line(mean_scores, x=datetime_index, y='sentiment_score', markers=True,color='color',
+                   title=f'{ticker} Hourly Sentiment Scores (Green: Positive, Red: Negative)')
     return fig1, fig2
 
 # Define a function for plotting daily sentiment
 def plot_daily_sentiment(parsed_and_scored_news, ticker):
     mean_scores_d = parsed_and_scored_news.resample('D').mean()
     print("daily")
-    fig1 = px.bar(mean_scores_d, x=mean_scores_d.index, y='sentiment_score', title=f'{ticker} Daily Sentiment Scores')
+    fig1 = px.bar(mean_scores_d, x=mean_scores_d.index, y='sentiment_score', title=f'{ticker} Daily Sentiment Scores',width=100
+                  ,height=100)
     # Create a column for color based on sentiment_score
     mean_scores_d['color'] = mean_scores_d['sentiment_score'].apply(lambda score: 'green' if score > 0 else 'red')
     mean_scores_d.dropna(subset=['sentiment_score'], inplace=True)
@@ -212,9 +263,10 @@ st.header("Stock News Sentiment Analyzer :dollar:")
 ticker = st.text_input('Enter Stock Ticker', '').upper()
 
 if ticker:
+    st.info(company_intro)
     try:
         st.success(f"Hourly and Daily Sentiment of {ticker} Stock")
-        parse_news_df = get_news_df(ticker)
+        parse_news_df ,company_intro= get_news_df(ticker)
         print("aage aa")
         parsed_and_scored_news,most_negative_day,lowest_avg_sentiment,most_positive_day,highest_avg_sentiment,most_negative_week,\
            most_positive_week,lowest_avg_sentimentw,highest_avg_sentimentw= score_news(parse_news_df)
@@ -262,4 +314,4 @@ if ticker:
         st.warning("An error occurred. Please enter a correct stock ticker, e.g., 'AAPL' above and hit Enter.")
         st.info("If you want to explore a ticker, click the link below.")
 else:
-    st.info("WElcome")
+    st.info(company_intro)
