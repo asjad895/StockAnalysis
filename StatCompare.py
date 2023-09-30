@@ -247,9 +247,9 @@ def compare(ticker):
         df.set_index('date', inplace=True)
         print(df)
         dfs.append(df)
-        csv_file_path = f"{i}"+"Scored.csv"
-        df.to_csv(csv_file_path, index=False)
-        print(f"DataFrame saved to {csv_file_path}")
+        # csv_file_path = f"{i}"+"Scored.csv"
+        # df.to_csv(csv_file_path, index=False)
+        # print(f"DataFrame saved to {csv_file_path}")
         print("_______________________________________________________________________________________\n",i)
 
     return dfs
