@@ -243,6 +243,8 @@ def compare(ticker):
         scores_df = pd.DataFrame(scores)
         df = df.join(scores_df, rsuffix='_right')
         df = df.rename(columns={"compound": "sentiment_score"})
+        daily=df.groupby('date')['sentiment_score'].mean()
+        print(daily)
         dfs.append(df)
         csv_file_path = f"{i}"+"Scored.csv"
         df.to_csv(csv_file_path, index=False)
