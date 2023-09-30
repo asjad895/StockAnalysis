@@ -32,7 +32,7 @@ st.set_page_config(page_title="Stock Sentiment Analysis", page_icon="random", la
 
 # # Call the function to set the background image
 # add_bg_from_local('bg2.PNG')
-
+company_intro=""
 # Define a function for getting news from Finviz
 def preprocess_datetime(datetime_str):
     if "Today" in datetime_str:
@@ -50,6 +50,13 @@ def get_news_df(tickers):
     soup = BeautifulSoup(response, 'html.parser')
     # Find all <tr> elements representing news articles
     news_articles = soup.find_all('tr', class_='cursor-pointer has-label')
+    # Find all <tr> tags with class="table-light3-row"
+    rows = soup.find_all('tr', class_='table-light3-row')
+    # Extract text under the <div> tag within each <tr>
+    for row in rows:
+        div_text = row.find('div').text
+        company_intro+=div_text+"\n"
+    print(company_intro)
     # Initialize lists to store extracted data
     dates = []
     times = []
@@ -254,3 +261,5 @@ if ticker:
     except Exception as e:
         st.warning("An error occurred. Please enter a correct stock ticker, e.g., 'AAPL' above and hit Enter.")
         st.info("If you want to explore a ticker, click the link below.")
+else:
+    st.info("WElcome")
