@@ -6,7 +6,6 @@ import numpy as np
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup, NavigableString
 import pandas as pd
-import plotly
 import plotly.express as px
 from PIL import Image
 import nltk
