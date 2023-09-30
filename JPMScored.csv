@@ -1,101 +1,12 @@
-date,time,headline,datetime,neg,neu,pos,sentiment_score
-2023-10-01,07:00AM,JPMorgan pursues Sports Direct over commercial property spat,2023-10-01 07:00:00,0.0,1.0,0.0,0.0
-2023-09-29,10:18PM,UPDATE 1-US CFTC orders 3 major US banks to pay over $50 mln for swap reporting failures,2023-09-29 22:18:00,0.239,0.761,0.0,-0.5267
-2023-09-29,10:03PM,US CFTC orders 3 major US banks to pay over $50 million for swap reporting failures,2023-09-29 22:03:00,0.253,0.747,0.0,-0.5267
-2023-09-29,10:00PM,US CFTC orders 3 major US banks to pay over $50 mln for swap reporting failures,2023-09-29 22:00:00,0.253,0.747,0.0,-0.5267
-2023-09-29,04:12PM,Big bank CEOs set to testify on Capitol Hill in December,2023-09-29 16:12:00,0.0,1.0,0.0,0.0
-2023-09-29,04:11PM,Weeks Best: JPMorgans Big Hire,2023-09-29 16:11:00,0.0,0.488,0.512,0.6369
-2023-09-29,11:20AM,JPMorgan Manager Behind Biggest Active ETF Debuts New Fund,2023-09-29 11:20:00,0.0,0.748,0.252,0.4019
-2023-09-29,09:30AM,J.P. Morgan Asset Management Launches Hedged Equity Laddered Overlay ETF: HELO,2023-09-29 09:30:00,0.0,0.8,0.2,0.3612
-2023-09-29,07:57AM,JPMorgan (JPM) Offers Account Validation Services to Treasury,2023-09-29 07:57:00,0.0,0.795,0.205,0.2023
-2023-09-28,05:48PM,"There are a lot of signs an economic slowdown is coming, says JPMorgan's David Kelly",2023-09-28 17:48:00,0.0,1.0,0.0,0.0
-2023-09-28,02:46PM,Oil Rally Falters With Crude Market in Overbought Territory,2023-09-28 14:46:00,0.316,0.684,0.0,-0.5719
-2023-09-28,01:18PM,Banking Giants Abuzz About Tokenization of Real-World Assets as DeFi Craves Collateral,2023-09-28 13:18:00,0.0,0.866,0.134,0.1779
-2023-09-28,12:16PM,BlackRock Joins Goldman in Cloning JPMorgans Blockbuster ETF,2023-09-28 12:16:00,0.0,0.642,0.358,0.5994
-2023-09-28,11:01AM,"JPMorgan's Kolanovic maintaining S&P target of 4,200 on sell offs",2023-09-28 11:01:00,0.0,1.0,0.0,0.0
-2023-09-28,09:23AM,"Deals are coming back  but not as fast as Wall Street wants, Jefferies results show",2023-09-28 09:23:00,0.0,1.0,0.0,0.0
-2023-09-28,08:43AM,Bank of Americas Huge Bond Losses Likely Widened in Third Quarter,2023-09-28 08:43:00,0.193,0.643,0.164,-0.1027
-2023-09-28,08:08AM,"RPT-BNP Paribas upbeat on India bonds after JPMorgan inclusion, sees 10-year rally",2023-09-28 08:08:00,0.0,1.0,0.0,0.0
-2023-09-28,06:33AM,"BNP Paribas upbeat on India bonds after JPMorgan inclusion, sees 10-year rally",2023-09-28 06:33:00,0.0,1.0,0.0,0.0
-2023-09-28,05:30AM,Want This 6% CD? You Have to Have $5 Million,2023-09-28 05:30:00,0.0,0.874,0.126,0.0772
-2023-09-27,05:33PM,Paulsons Ex-Business Partner Adds JPMorgan to Fraud Lawsuit,2023-09-27 17:33:00,0.487,0.513,0.0,-0.6908
-2023-09-27,03:13PM,BofA CEO Moynihan: Fed 'has won' in quest for soft landing,2023-09-27 15:13:00,0.0,0.73,0.27,0.5719
-2023-09-27,01:57PM,Employees at closed First Republic branches still have a job (for six months),2023-09-27 13:57:00,0.0,1.0,0.0,0.0
-2023-09-27,12:34PM,JPMorgan Options Whale Worries Resurface as Stocks Extend Drop,2023-09-27 12:34:00,0.389,0.476,0.135,-0.4939
-2023-09-27,11:02AM,JPMorgan's (JPM) UK Retail Bank Chase Restricts Crypto Dealings,2023-09-27 11:02:00,0.223,0.777,0.0,-0.3182
-2023-09-27,09:05AM,The Entreprenista 100 Awards Calls for Applications from Successful Female Founders,2023-09-27 09:05:00,0.0,0.57,0.43,0.7783
-2023-09-27,09:00AM,Investors Heavily Search JPMorgan Chase & Co. (JPM): Here is What You Need to Know,2023-09-27 09:00:00,0.0,1.0,0.0,0.0
-2023-09-27,08:53AM,UPDATE 1-U.S. Treasury tasks JPMorgan with account validation for federal agencies,2023-09-27 08:53:00,0.0,0.847,0.153,0.2023
-2023-09-27,08:40AM,U.S. Treasury tasks JPMorgan with account validation for federal agencies,2023-09-27 08:40:00,0.0,0.833,0.167,0.2023
-2023-09-27,08:30AM,J.P. Morgan to Provide Account Validation Services to the U.S. Government,2023-09-27 08:30:00,0.0,1.0,0.0,0.0
-2023-09-27,08:00AM,JPMorgan Chases $200 million investment in Detroit could show other cities how to bounce back. Just look at the Motor Citys massive drop in unemployment,2023-09-27 08:00:00,0.179,0.821,0.0,-0.6124
-2023-09-27,12:21AM,"India's ""activist"" cenbank to temper rupee, bond gains post index inclusion -JPMorgan's Aziz",2023-09-27 00:21:00,0.173,0.679,0.148,-0.1027
-2023-09-27,12:00AM,JPMorgans decision to settle over Epstein was a long time coming,2023-09-27 00:00:00,0.0,1.0,0.0,0.0
-2023-09-27,12:00AM,Amazon: Lina Khans ultimate test,2023-09-27 00:00:00,0.0,0.702,0.298,0.1779
-2023-09-26,09:30PM,RPT-JPMorgan sees India in its top 3 fastest-growing Asia markets in 2024,2023-09-26 21:30:00,0.0,0.847,0.153,0.2023
-2023-09-26,05:39PM,"Trump fraud, JPMorgan-Epstein settlement, UPS hiring: Top Stories",2023-09-26 17:39:00,0.328,0.517,0.155,-0.4588
-2023-09-26,04:18PM,JPMorgan Paying $75 Million to Settle Suit Over Jeffrey Epstein Ties,2023-09-26 16:18:00,0.0,1.0,0.0,0.0
-2023-09-26,02:54PM,"JPMorgan's Jamie Dimon says interest rates 'may go up more,' says he hopes for soft landing",2023-09-26 14:54:00,0.0,0.707,0.293,0.7003
-2023-09-26,01:48PM,Exclusive-JPMorgan shuffles bosses as Rivas to retire as head of North American investment banking -memo,2023-09-26 13:48:00,0.0,1.0,0.0,0.0
-2023-09-26,10:24AM,"JPMorgan Settles With Staley, USVI Over Jeffrey Epstein Ties",2023-09-26 10:24:00,0.0,1.0,0.0,0.0
-2023-09-26,10:22AM,JPMorgan to pay $75 million on claims that it enabled Jeffrey Epstein's sex trafficking operations,2023-09-26 10:22:00,0.091,0.909,0.0,-0.1027
-2023-09-26,10:19AM,UPDATE 2-JPMorgan pays $75 million to settle lawsuit over Jeffrey Epstein ties,2023-09-26 10:19:00,0.147,0.853,0.0,-0.2263
-2023-09-26,10:16AM,JPMorgan settles Jeffrey Epstein lawsuits with US Virgin Islands and Jes Staley,2023-09-26 10:16:00,0.127,0.873,0.0,-0.1531
-2023-09-26,10:16AM,JPMorgan settles Epstein lawsuits with US Virgin Islands and Jes Staley,2023-09-26 10:16:00,0.138,0.862,0.0,-0.1531
-2023-09-26,10:14AM,JPMorgan Chase Settles Remaining Litigations Relating to Jeffrey Epstein,2023-09-26 10:14:00,0.0,1.0,0.0,0.0
-2023-09-26,10:09AM,JPMorgan agrees to $75 million settlement with US Virgin Islands in lawsuit tied to Jeffrey Epstein,2023-09-26 10:09:00,0.107,0.791,0.102,-0.0258
-2023-09-26,10:01AM,JPMorgan settles Epstein lawsuit with US Virgin Islands for $75 mln,2023-09-26 10:01:00,0.16,0.84,0.0,-0.2263
-2023-09-26,09:42AM,Former local First Republic exec to lead J.P. Morgan Wealth Management Southeast region,2023-09-26 09:42:00,0.0,0.789,0.211,0.4939
-2023-09-26,09:32AM,Jamie Dimon believes U.S. 'not prepared' for 7% interest rates,2023-09-26 09:32:00,0.132,0.632,0.237,0.3257
-2023-09-26,09:30AM,JPMorgan's UK bank Chase to ban crypto transactions,2023-09-26 09:30:00,0.34,0.66,0.0,-0.5574
-2023-09-26,09:22AM,UPDATE 1-JPMorgan's UK bank Chase to ban crypto transactions,2023-09-26 09:22:00,0.31,0.69,0.0,-0.5574
-2023-09-26,09:16AM,Jamie Dimon Warns the World Its Not Prepared for 7% Interest Rates,2023-09-26 09:16:00,0.204,0.597,0.199,0.2344
-2023-09-26,09:02AM,JPMorgan sees India in its top 3 fastest-growing Asia markets in 2024,2023-09-26 09:02:00,0.0,0.847,0.153,0.2023
-2023-09-26,08:31AM,"Biden Heads to Michigan, Jamie Dimon's Warning, Sell-off in Bonds: 3 Things to Know",2023-09-26 08:31:00,0.167,0.833,0.0,-0.34
-2023-09-26,06:00AM,Column: Jeffrey Epstein reaches from the grave to expose how JPMorgan profited from his sex trafficking,2023-09-26 06:00:00,0.213,0.609,0.178,-0.1779
-2023-09-26,05:47AM,Jamie Dimon Warns Fed Rate Could Reach 7%. Whats Worrying the JPMorgan CEO.,2023-09-26 05:47:00,0.255,0.671,0.074,-0.4019
-2023-09-26,01:35AM,Dimon warns of economic stress if Fed benchmark interest rates hit 7%,2023-09-26 01:35:00,0.259,0.556,0.185,-0.0516
-2023-09-25,11:50PM,India's inclusion in JP Morgan's bond index to bolster rupee and attract foreign investment,2023-09-25 23:50:00,0.0,0.705,0.295,0.6166
-2023-09-25,07:16PM,Bunker Labs and JPMorgan Chase Commercial Banking Welcome New Cohort of Veteran and Military-Spouse Business Owners to CEOcircle Program,2023-09-25 19:16:00,0.0,0.857,0.143,0.4588
-2023-09-25,05:45PM,JPMorgan Chase & Co. (JPM) Outpaces Stock Market Gains: What You Should Know,2023-09-25 17:45:00,0.0,0.821,0.179,0.34
-2023-09-25,01:29PM,JPMorgan Chase Nabs $2 Billion Private-Banker Team From Citi,2023-09-25 13:29:00,0.0,1.0,0.0,0.0
-2023-09-25,12:08PM,JPMorgan (JPM) Completes 14 First Republic Branch Closures,2023-09-25 12:08:00,0.0,1.0,0.0,0.0
-2023-09-25,12:00PM,JPMorgan Chase Brings Quantum to Wall Street,2023-09-25 12:00:00,0.0,1.0,0.0,0.0
-2023-09-25,10:08AM,Dow Jones Sees Drop Driven by 3M and Jpmorgan Chase Shares,2023-09-25 10:08:00,0.158,0.677,0.165,0.0258
-2023-09-25,07:01AM,"India's Emcure Pharma plans 2024 IPO, hires JP Morgan, Jefferies- sources",2023-09-25 07:01:00,0.0,0.798,0.202,0.368
-2023-09-25,01:47AM,India Bonds Finally at Global High Table With Index Addition,2023-09-25 01:47:00,0.0,1.0,0.0,0.0
-2023-09-25,12:46AM,JPMorgan M&A Head Sees Up to $150 Billion Funds Focused on India,2023-09-25 00:46:00,0.0,0.809,0.191,0.3818
-2023-09-24,10:28PM,Investor focus on India's market potential intensifies,2023-09-24 22:28:00,0.0,1.0,0.0,0.0
-2023-09-24,08:12PM,India's trillion-dollar bond market braces for foreign capital boost,2023-09-24 20:12:00,0.0,0.748,0.252,0.4019
-2023-09-22,04:53PM,J.P. Morgan Private Bank lands 3 directors from Citi for Seattle office,2023-09-22 16:53:00,0.0,1.0,0.0,0.0
-2023-09-22,04:28PM,"JPMorgan shutters 14 First Republic branches, more closures expected",2023-09-22 16:28:00,0.0,1.0,0.0,0.0
-2023-09-22,10:44AM,"Goldman (GS), Other Banks to Face Bond Collusion Claims",2023-09-22 10:44:00,0.0,1.0,0.0,0.0
-2023-09-22,10:29AM,Cost of capital may come down after India's bond index inclusion- official,2023-09-22 10:29:00,0.0,1.0,0.0,0.0
-2023-09-22,09:30AM,JPMorgan Chase & Co. (JPM) Boasts Earnings & Price Momentum: Should You Buy?,2023-09-22 09:30:00,0.0,1.0,0.0,0.0
-2023-09-22,09:19AM,JP Morgan's inclusion of Indian bonds to boost rupee amid rising oil prices,2023-09-22 09:19:00,0.0,0.678,0.322,0.6408
-2023-09-22,05:45AM,JPMorgan adds India to pivotal bond index,2023-09-22 05:45:00,0.0,1.0,0.0,0.0
-2023-09-22,05:13AM,"EMERGING MARKETS-Stocks recover from Fed jolt, India to join JPMorgan bond index",2023-09-22 05:13:00,0.0,0.833,0.167,0.296
-2023-09-22,03:19AM,Nifty PSU Bank index rallies amid JP Morgan's inclusion of Indian bonds in EM index,2023-09-22 03:19:00,0.0,0.713,0.287,0.6408
-2023-09-22,02:13AM,PNB Gilts shares surge amid India's inclusion in JPMorgan's bond index,2023-09-22 02:13:00,0.0,0.82,0.18,0.296
-2023-09-22,12:31AM,JPMorgan index inclusion shows confidence in Indian economy -India econ affairs secy,2023-09-22 00:31:00,0.0,0.769,0.231,0.5106
-2023-09-21,10:14PM,JP Morgan to incorporate Indian Government Bonds into Emerging Market Indices,2023-09-21 22:14:00,0.0,0.798,0.202,0.368
-2023-09-21,10:08PM,"Indian bonds to stimulate foreign investment, strengthen rupee with JPMorgan index inclusion",2023-09-21 22:08:00,0.0,0.704,0.296,0.4939
-2023-09-21,10:05PM,India's banking sector sees significant surge following JPMorgan's inclusion of government bonds in benchmark index,2023-09-21 22:05:00,0.0,0.886,0.114,0.2023
-2023-09-21,02:59PM,JPMorgan Loses Bid to Vacate Ex-Advisors $1.4 Million Arbitration Award,2023-09-21 14:59:00,0.167,0.58,0.254,0.296
-2023-09-21,10:05AM,"Bet on Quality ETFs as Fed Keeps Rate Steady, View Hawkish",2023-09-21 10:05:00,0.0,1.0,0.0,0.0
-2023-09-21,06:20AM,Should JPMorgan BetaBuilders U.S. Mid Cap Equity ETF (BBMC) Be on Your Investing Radar?,2023-09-21 06:20:00,0.0,1.0,0.0,0.0
-2023-09-20,09:42PM,UPDATE 1-US urged JPMorgan to 'be patient' before halt to processing Russia grain payments,2023-09-20 21:42:00,0.0,1.0,0.0,0.0
-2023-09-20,08:49PM,US urged JPMorgan to 'be patient' before halt to processing Russia grain payments,2023-09-20 20:49:00,0.0,1.0,0.0,0.0
-2023-09-20,05:42PM,Should You Watch JPMorgan (JPM) for a Higher Dividend?,2023-09-20 17:42:00,0.0,1.0,0.0,0.0
-2023-09-20,04:37PM,JPMorgan Chase closes many First Republic branches. Heres where they are,2023-09-20 16:37:00,0.0,1.0,0.0,0.0
-2023-09-20,11:43AM,Truist (TFC) Enters Partnership Deal to Reinforce Trade Finance,2023-09-20 11:43:00,0.0,1.0,0.0,0.0
-2023-09-19,04:24PM,JPMorgan Chase Declares Common Stock Dividend,2023-09-19 16:24:00,0.0,1.0,0.0,0.0
-2023-09-19,01:03PM,Instacart Soars Up to 43% in Debut After $660 Million IPO,2023-09-19 13:03:00,0.0,1.0,0.0,0.0
-2023-09-19,10:55AM,Brunswick Prep School Is Borrowing to Expand Campus and Housing,2023-09-19 10:55:00,0.0,0.796,0.204,0.3182
-2023-09-19,08:47AM,"UPDATE 2-British banks press BoE to soften capital plans, citing competition hit",2023-09-19 08:47:00,0.0,1.0,0.0,0.0
-2023-09-19,08:39AM,Brazils Economy Grows More Than Expected as Interest Rate Falls,2023-09-19 08:39:00,0.0,0.75,0.25,0.4588
-2023-09-19,08:39AM,Goldman lead director 'very supportive' of CEO David Solomon: Mayo,2023-09-19 08:39:00,0.0,0.783,0.217,0.3597
-2023-09-19,08:05AM,Oils Ascent to $95 Is Changing Trades Across Wall Street,2023-09-19 08:05:00,0.0,1.0,0.0,0.0
-2023-09-19,08:03AM,HSBC Hires Ex-Credit Suisse Bankers to Build Equities Business,2023-09-19 08:03:00,0.0,1.0,0.0,0.0
-2023-09-19,06:57AM,Morgan Stanley pioneers AI assistant usage in major banks,2023-09-19 06:57:00,0.0,1.0,0.0,0.0
-2023-09-19,06:48AM,CLOs Desperate for Collateral Are Loading Up on Junk Bonds,2023-09-19 06:48:00,0.204,0.796,0.0,-0.3182
+sentiment_score
+0.08185
+0.0
+0.22669999999999998
+0.21674545454545455
+0.20095
+0.2191
+-0.05536521739130435
+-0.020378571428571437
+0.01799000000000001
+0.002775000000000024
+0.0

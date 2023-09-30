@@ -1,101 +1,16 @@
-date,time,headline,datetime,neg,neu,pos,sentiment_score
-2023-09-29,03:10PM,US picket lines put shareholders in the spotlight over pay,2023-09-29 15:10:00,0.135,0.865,0.0,-0.1027
-2023-09-29,05:55AM,"2 Stocks That Turned $10,000 Into $1.5 million (or More)",2023-09-29 05:55:00,0.0,1.0,0.0,0.0
-2023-09-29,05:30AM,Why stocks may just roll into an October correction,2023-09-29 05:30:00,0.0,1.0,0.0,0.0
-2023-09-28,09:49PM,Netflix Co-Founder Marc Randolph reflects on end of DVD-by-mail service,2023-09-28 21:49:00,0.0,1.0,0.0,0.0
-2023-09-28,05:37PM,"Netflix DVD shipments end, Carnival earnings, inflation data: What to watch",2023-09-28 17:37:00,0.0,1.0,0.0,0.0
-2023-09-28,12:00PM,The Wonderful Story of Henry Sugar film review  fun-size Wes Anderson yarn provides exquisite rush,2023-09-28 12:00:00,0.0,0.791,0.209,0.5719
-2023-09-28,12:00PM,Fair Play film review  erotic thriller trades on forbidden lust at a hedge fund,2023-09-28 12:00:00,0.156,0.503,0.341,0.3182
-2023-09-28,11:18AM,"JPMorgan cuts Netflix price target, trims estimates",2023-09-28 11:18:00,0.268,0.732,0.0,-0.296
-2023-09-28,09:29AM,Netflix's DVD-by-mail service bows out as its red-and-white envelopes make their final trip,2023-09-28 09:29:00,0.0,1.0,0.0,0.0
-2023-09-28,08:57AM,"FANG Stocks News & Quotes: Facebook, Amazon, Netflix, Google",2023-09-28 08:57:00,0.0,0.805,0.195,0.1779
-2023-09-27,11:55PM,"UPDATE 1-Hollywood studios, actors on strike to resume talks next week",2023-09-27 23:55:00,0.13,0.87,0.0,-0.128
-2023-09-27,05:45PM,Netflix (NFLX) Stock Sinks As Market Gains: What You Should Know,2023-09-27 17:45:00,0.0,0.806,0.194,0.34
-2023-09-27,03:09PM,Hollywood Writers Won But Hollywood Still Can't Go Back To Normal,2023-09-27 15:09:00,0.0,0.81,0.19,0.3291
-2023-09-27,01:46PM,Netflix on the Rise Post-Writers' Strike,2023-09-27 13:46:00,0.231,0.769,0.0,-0.128
-2023-09-27,11:38AM,WGA strike ends with tentative deal while actors' strike continues,2023-09-27 11:38:00,0.273,0.727,0.0,-0.25
-2023-09-27,11:34AM,Media Stocks Rise as Hollywood Writers Strike Ends,2023-09-27 11:34:00,0.176,0.824,0.0,-0.128
-2023-09-27,10:31AM,Netflix (NFLX) Expands Gaming Portfolio With Four New Games,2023-09-27 10:31:00,0.0,0.851,0.149,0.1027
-2023-09-27,09:20AM,Warning: Here's 1 Reason Why You Should Avoid Disney Stock,2023-09-27 09:20:00,0.397,0.603,0.0,-0.5574
-2023-09-27,08:00AM,4 Ways to Add $10 to Your Savings Account Every Week,2023-09-27 08:00:00,0.0,1.0,0.0,0.0
-2023-09-26,10:13PM,Hollywood writers' deal may set a template for talks with striking actors,2023-09-26 22:13:00,0.0,1.0,0.0,0.0
-2023-09-26,03:44PM,Movie Studio and News Media Stocks List,2023-09-26 15:44:00,0.0,1.0,0.0,0.0
-2023-09-26,01:49PM,Disney/Comcast: tug of war for Hulu ropes in House of Mouse,2023-09-26 13:49:00,0.281,0.719,0.0,-0.5994
-2023-09-26,11:28AM,Amazon (AMZN) Set to Roll Out Ad-Supported Prime Video in 2024,2023-09-26 11:28:00,0.0,0.855,0.145,0.1779
-2023-09-26,09:00AM,"Here is What to Know Beyond Why Netflix, Inc. (NFLX) is a Trending Stock",2023-09-26 09:00:00,0.0,1.0,0.0,0.0
-2023-09-26,08:58AM,Netflix (NFLX) Strengthens APAC Footprint With New Initiatives,2023-09-26 08:58:00,0.0,0.7,0.3,0.4588
-2023-09-26,08:18AM,Micron (MU) to Report Q4 Earnings: What's in the Offing?,2023-09-26 08:18:00,0.0,1.0,0.0,0.0
-2023-09-26,08:03AM,Better Growth Stock: Roblox vs. Roku,2023-09-26 08:03:00,0.0,0.421,0.579,0.6705
-2023-09-26,03:00AM,How Black British Business Awards finalists use valued experience to their advantage,2023-09-26 03:00:00,0.0,0.533,0.467,0.7845
-2023-09-26,12:00AM,"Streaming will transform video games just like Netflix changed TV, says Ubisoft",2023-09-26 00:00:00,0.0,0.815,0.185,0.3612
-2023-09-25,06:07PM,Why there may be less content coming to your streaming service,2023-09-25 18:07:00,0.0,1.0,0.0,0.0
-2023-09-25,05:08PM,How Netflix Makes Money,2023-09-25 17:08:00,0.0,1.0,0.0,0.0
-2023-09-25,04:22PM,"Writers' Strike Finally Nears Conclusion With New Deal. Streaming, Studio Stocks Slide.",2023-09-25 16:22:00,0.12,0.88,0.0,-0.128
-2023-09-25,04:13PM,"Netflix, Amazon Stocks Rise With End in Sight for Hollywood Writers Strike",2023-09-25 16:13:00,0.114,0.758,0.129,0.0516
-2023-09-25,04:03PM,Netflix Loses Broadcom Patent Lawsuit In Germany,2023-09-25 16:03:00,0.457,0.543,0.0,-0.4939
-2023-09-25,01:42PM,Studios Labor Focus Shifts to Actors With Writers Deal Clinched,2023-09-25 13:42:00,0.0,1.0,0.0,0.0
-2023-09-25,01:32PM,"WGA, AMPTP reach tentative deal: Which shows will be back first?",2023-09-25 13:32:00,0.0,0.901,0.099,0.0258
-2023-09-25,12:45PM,The Hollywood Strike Deal Is a Mixed Blessing For  Studios,2023-09-25 12:45:00,0.128,0.598,0.274,0.4019
-2023-09-25,12:44PM,Formula One 'On The Cutting Edge Of Technology': McLaren Racing CEO On Why Tech Industry Is Rushing To Motor Sports,2023-09-25 12:44:00,0.073,0.927,0.0,-0.128
-2023-09-25,12:08PM,Netflix ordered to halt patent infringement by German court in ongoing Broadcom dispute,2023-09-25 12:08:00,0.345,0.655,0.0,-0.7003
-2023-09-25,12:08PM,Netflix (NFLX) Expands Portfolio With New Italian Content,2023-09-25 12:08:00,0.0,0.833,0.167,0.1027
-2023-09-25,10:20AM,"Hollywood strikes: WGA, studios reach tentative deal",2023-09-25 10:20:00,0.291,0.581,0.128,-0.34
-2023-09-25,10:07AM,TD SYNNEX (SNX) to Report Q3 Earnings: What's in Store?,2023-09-25 10:07:00,0.0,1.0,0.0,0.0
-2023-09-25,08:45AM,Hollywood writers reach tentative deal with studios to end historic strike,2023-09-25 08:45:00,0.129,0.776,0.095,-0.1027
-2023-09-25,06:41AM,"German court ordered Netflix to cease patent infringement, announced Broadcom",2023-09-25 06:41:00,0.256,0.744,0.0,-0.4767
-2023-09-25,04:57AM,"Disney, Netflix, Other Media Stocks Rise With End in Sight for Hollywood Writers Strike",2023-09-25 04:57:00,0.103,0.897,0.0,-0.128
-2023-09-24,07:30AM,You Don't Have to Pick a Winner in Streaming Services. Here's Why.,2023-09-24 07:30:00,0.0,0.725,0.275,0.5859
-2023-09-24,05:10AM,"3 Incredible Growth Stocks That Could Climb 22% or More, According to Wall Street",2023-09-24 05:10:00,0.0,0.822,0.178,0.3818
-2023-09-23,10:15AM,Where Will Roku Stock Be in 5 Years?,2023-09-23 10:15:00,0.0,1.0,0.0,0.0
-2023-09-23,06:54AM,12 Best Streaming and TV Stocks To Buy Now,2023-09-23 06:54:00,0.0,0.656,0.344,0.6369
-2023-09-23,01:09AM,"UPDATE 1-No deal yet as Hollywood writers, studios talk for third straight day",2023-09-23 01:09:00,0.0,0.863,0.137,0.2263
-2023-09-22,11:57PM,"No deal yet as Hollywood writers, studios talk for third straight day",2023-09-22 23:57:00,0.156,0.709,0.135,-0.0772
-2023-09-22,04:07PM,"Netflix Faces Near-Term Headwinds In Advertising, Content",2023-09-22 16:07:00,0.0,1.0,0.0,0.0
-2023-09-22,11:59AM,Amazon to join peers with ads on streaming services,2023-09-22 11:59:00,0.0,0.642,0.358,0.4404
-2023-09-22,11:28AM,Amazon Prime Video Will Feature Ads Starting Next Year,2023-09-22 11:28:00,0.0,0.825,0.175,0.1779
-2023-09-22,10:32AM,An End to the Hollywood Writers Strike Could Be in Sight. Talks Continue Today.,2023-09-22 10:32:00,0.103,0.897,0.0,-0.128
-2023-09-22,09:13AM,"Amazon to Introduce Ads on Prime Video in 2024, Offers Ad-Free Option for Extra Cost",2023-09-22 09:13:00,0.0,0.892,0.108,0.1779
-2023-09-22,08:49AM,Amazon to include ads on Prime Video for first time,2023-09-22 08:49:00,0.0,0.841,0.159,0.1779
-2023-09-22,08:38AM,"Netflix (NFLX) Stock Quotes, Company News And Chart Analysis",2023-09-22 08:38:00,0.0,1.0,0.0,0.0
-2023-09-22,07:28AM,Amazon Is Latest to Add Advertising to Streaming. How Prices Rival Netflix.,2023-09-22 07:28:00,0.0,0.866,0.134,0.1779
-2023-09-22,12:00AM,Its Always Sunny in Philadelphia returns for a 16th shot on Netflix,2023-09-22 00:00:00,0.0,0.781,0.219,0.4215
-2023-09-21,05:45PM,Netflix (NFLX) Stock Moves -0.56%: What You Should Know,2023-09-21 17:45:00,0.0,1.0,0.0,0.0
-2023-09-21,04:44PM,Netflix (NFLX) Resurrects Onimusha with Epic Anime Revival,2023-09-21 16:44:00,0.0,1.0,0.0,0.0
-2023-09-21,04:17PM,"Writers, UAW, UPS strikes: Impact on economy",2023-09-21 16:17:00,0.294,0.706,0.0,-0.3612
-2023-09-21,12:26PM,"Could WGA, studio execs. be nearing a deal to end writers' strike?",2023-09-21 12:26:00,0.13,0.87,0.0,-0.128
-2023-09-21,07:30AM,Is Netflix Stock A Buy Before Video Streamer's Third-Quarter Report?,2023-09-21 07:30:00,0.0,1.0,0.0,0.0
-2023-09-21,06:07AM,Hollywood strike discussions continue between WGA and producers,2023-09-21 06:07:00,0.176,0.824,0.0,-0.128
-2023-09-20,10:23AM,REFILE-Netflix can be sued by ex-Central Park Five prosecutor for defamation,2023-09-20 10:23:00,0.0,1.0,0.0,0.0
-2023-09-20,07:19AM,My Top FAANG Stock to Buy for the Second Half of 2023 (and Beyond),2023-09-20 07:19:00,0.0,0.878,0.122,0.2023
-2023-09-20,06:18AM,India to find 'pragmatic solutions' on tobacco rules for streaming firms,2023-09-20 06:18:00,0.0,0.855,0.145,0.1779
-2023-09-18,01:55PM,"Striking Hollywood writers, studios to resume negotiations on Wednesday",2023-09-18 13:55:00,0.0,1.0,0.0,0.0
-2023-09-18,12:03PM,Unpacking the Investment Potential of Netflix Inc (NFLX): A Deep Dive into Financial Metrics ...,2023-09-18 12:03:00,0.0,1.0,0.0,0.0
-2023-09-18,10:36AM,"Netflix Stock Slipped Last Week on Management Comments, Analysts Say",2023-09-18 10:36:00,0.0,1.0,0.0,0.0
-2023-09-18,09:31AM,2 Super Streaming Stocks to Buy Now and Hold for the Long Run,2023-09-18 09:31:00,0.0,0.738,0.262,0.5994
-2023-09-18,09:30AM,I Had a Hard Time Cutting My Restaurant Spending. Here's What I Did,2023-09-18 09:30:00,0.266,0.734,0.0,-0.2263
-2023-09-18,09:00AM,Why Investors Need to Take Advantage of These 2 Consumer Discretionary Stocks Now,2023-09-18 09:00:00,0.0,0.846,0.154,0.25
-2023-09-18,07:56AM,Netflix: Evercore ISI lowers price target amid market concerns,2023-09-18 07:56:00,0.158,0.842,0.0,-0.128
-2023-09-18,06:07AM,1 Huge Tailwind That Could Send Netflix Stock Soaring,2023-09-18 06:07:00,0.0,0.753,0.247,0.3182
-2023-09-18,03:30AM,Netflix's paid sharing strategy boosts subscriber growth and revenue potential,2023-09-18 03:30:00,0.0,0.476,0.524,0.7717
-2023-09-17,10:37PM,"UPDATE 2-S.Korean broadband firm, Netflix says ending all disputes over costs",2023-09-17 22:37:00,0.174,0.826,0.0,-0.2732
-2023-09-17,10:22PM,"S.Korean broadband firm, Netflix says ending all disputes over costs",2023-09-17 22:22:00,0.189,0.811,0.0,-0.2732
-2023-09-17,10:14PM,South Korean broadband firm says ending all disputes with Netflix,2023-09-17 22:14:00,0.189,0.811,0.0,-0.2732
-2023-09-17,09:00PM,How Prime-Time TV Will Look Different This Fall,2023-09-17 21:00:00,0.0,1.0,0.0,0.0
-2023-09-16,09:09AM,Netflixs Rough Week Had Minimal Impact on Exposed ETFs,2023-09-16 09:09:00,0.14,0.86,0.0,-0.0772
-2023-09-15,05:45PM,Netflix (NFLX) Stock Moves -0.89%: What You Should Know,2023-09-15 17:45:00,0.0,1.0,0.0,0.0
-2023-09-15,05:01PM,2 Unstoppable AI Growth Stocks to Buy Now and Hold Forever,2023-09-15 17:01:00,0.145,0.645,0.21,0.2023
-2023-09-15,01:09PM,"What to stream this week: Drake, Doja Cat, 'Sex Education,' 'The Super Models' and 'Superpower'",2023-09-15 13:09:00,0.0,0.782,0.218,0.5994
-2023-09-15,12:45PM,"Netflix, Caterpillar, UPS Have This in Common. It's Not Good",2023-09-15 12:45:00,0.211,0.789,0.0,-0.3412
-2023-09-15,12:00PM,Netflix to Announce Third Quarter 2023 Financial Results,2023-09-15 12:00:00,0.0,1.0,0.0,0.0
-2023-09-15,11:15AM,Netflix (NFLX) Expands India Presence With YRF Partnership,2023-09-15 11:15:00,0.0,0.833,0.167,0.1027
-2023-09-15,08:50AM,1 Major Advantage That Sets Roku Apart From Netflix and Other Streamers,2023-09-15 08:50:00,0.0,0.833,0.167,0.25
-2023-09-15,05:41AM,Revenue Growth Will Be a Key Focus for Netflix in 2024,2023-09-15 05:41:00,0.0,0.776,0.224,0.3818
-2023-09-15,04:59AM,Netflix's Ad-Venture: Adding Another Layer To Its Illustrious Growth Story,2023-09-15 04:59:00,0.0,0.776,0.224,0.3818
-2023-09-15,04:30AM,Tesla Stock and Netflix Stock: A Business Strategy Case Study,2023-09-15 04:30:00,0.0,1.0,0.0,0.0
-2023-09-15,12:10AM,One Piece Pirate Series Is Renewed by Netflix After Soaring to No. 1,2023-09-15 00:10:00,0.167,0.833,0.0,-0.296
-2023-09-14,06:58PM,"Analyst Report: Netflix, Inc.",2023-09-14 18:58:00,0.0,1.0,0.0,0.0
-2023-09-14,04:36PM,"S&P 500 Gains and Losses Today: Index Jumps After Economic Data, Arm IPO",2023-09-14 16:36:00,0.168,0.683,0.149,-0.0772
-2023-09-14,03:18PM,Netflix And Spotify Are Navigating The Streaming Crisis With Their Crowns Intact,2023-09-14 15:18:00,0.258,0.629,0.113,-0.5106
-2023-09-14,01:37PM,"Netflix stock falls after CFO says ad tier not material yet, warns of softer margins",2023-09-14 13:37:00,0.0,0.915,0.085,0.0762
-2023-09-14,01:20PM,"As Netflix Pulls Back, Is This the Start of a Larger Correction?",2023-09-14 13:20:00,0.0,1.0,0.0,0.0
-2023-09-14,12:45PM,Unveiling Netflix (NFLX)'s Value: Is It Really Priced Right? A Comprehensive Guide,2023-09-14 12:45:00,0.0,0.659,0.341,0.5667
+sentiment_score
+0.009183333333333321
+0.11643636363636366
+-0.0772
+-0.2049
+0.1761111111111111
+0.12673333333333334
+-0.10286666666666666
+0.13683
+0.28773333333333334
+0.48385
+-0.11972500000000001
+0.18535
+-0.04662222222222222
+0.11028571428571429
+-0.03423333333333333

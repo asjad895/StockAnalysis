@@ -17,7 +17,7 @@ nltk.downloader.download('vader_lexicon')
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 from StatCompare import preprocess_datetime,convert_to_numeric_date,get_news_df,calculate_statistics,score_news,compare
-from Plot import plot_daily_sentiment,plot_hourly_sentiment
+from Plot import plot_daily_sentiment,plot_hourly_sentiment,create_subplot_for_dataframes
 # Streamlit app
 st.set_page_config(page_title="MarketMoodMeter", page_icon="random", layout="wide", initial_sidebar_state="expanded")
 # Define a function for adding a background image
@@ -51,7 +51,6 @@ if ticker=='OTHER':
     ticker=st.text_input('Enter Stock Ticker name', '').upper()
 
 if ticker:
-    all_df=compare(ticker)
     parse_news_df, company_intro = get_news_df(ticker)
     st.info(f'{ticker} means {company_intro}')
     parsed_and_scored_news, most_negative_day, lowest_avg_sentiment, most_positive_day, highest_avg_sentiment, most_negative_week, \
@@ -104,7 +103,14 @@ if ticker:
             f"The week with the most negative sentiment is Week {most_negative_week} with an average score of {lowest_avg_sentimentw:.4f}")
         st.write(
             f"The week with the most positive sentiment is Week {most_positive_week} with an average score of {highest_avg_sentimentw:.4f}")
+    st.subheader(":blue[Comparison of Stocks]")
 
+    op=st.button('Compare')
+    if op:
+        all_df=compare(ticker)
+        fig=create_subplot_for_dataframes(all_df)
+        st.spinner('In Progress...')
+        st.plotly_chart(fig)
     st.success(f"Hourly and Daily Sentiment of {ticker} Stock")
     description = f"The above chart averages the sentiment scores of {ticker} stock hourly and daily. " \
                   "The table below gives each of the most recent headlines of the stock and the negative, " \

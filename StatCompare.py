@@ -236,15 +236,16 @@ def compare(ticker):
     for i in random_tickers:
         if i==ticker:
             continue
-        df=f"df_{i}"
+        df=f"{i}"
         df,a=get_news_df(i)
         vader = SentimentIntensityAnalyzer()
         scores = df['headline'].apply(vader.polarity_scores).tolist()
         scores_df = pd.DataFrame(scores)
         df = df.join(scores_df, rsuffix='_right')
         df = df.rename(columns={"compound": "sentiment_score"})
-        daily=df.groupby('date')['sentiment_score'].mean()
-        print(daily)
+        df=df.groupby('date')['sentiment_score'].mean().reset_index()
+        df.set_index('date', inplace=True)
+        print(df)
         dfs.append(df)
         csv_file_path = f"{i}"+"Scored.csv"
         df.to_csv(csv_file_path, index=False)

@@ -14,6 +14,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import streamlit as st
 from streamlit_lottie import st_lottie
 from datetime import datetime
+import plotly.graph_objects as go
 nltk.downloader.download('vader_lexicon')
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -63,3 +64,28 @@ def plot_daily_sentiment(parsed_and_scored_news, ticker):
                   ,height=600)
     print("daily2")
     return fig1, fig2
+
+
+def create_subplot_for_dataframes(dataframes):
+    """_summary_
+
+    Args:
+        dataframes: _10 dfs list_
+
+    Returns:
+        Fig: _Fig of 10 stock comparative_
+    """
+    traces = []
+    for i, df in enumerate(dataframes):
+        trace = go.Scatter(x=df.index, y=df['sentiment_score'], mode='lines', name=f'DF{i+1}')
+        traces.append(trace)
+    # Create a layout for the subplot with 10 line charts in a 2x5 grid
+    layout = go.Layout(
+        title='Sentiment Scores for 10 DataFrames',
+        grid={'rows': 10, 'columns': 10,},
+        width=800,  # Set the width
+        height=600
+    )
+    fig = go.Figure(data=traces, layout=layout)
+    
+    return fig
