@@ -12,7 +12,7 @@ import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import streamlit as st
 from streamlit_lottie import st_lottie
-
+from datetime import datetime
 nltk.downloader.download('vader_lexicon')
 # Streamlit app
 st.set_page_config(page_title="Stock Sentiment Analysis", page_icon="random", layout="wide", initial_sidebar_state="expanded")
@@ -34,7 +34,6 @@ st.set_page_config(page_title="Stock Sentiment Analysis", page_icon="random", la
 # add_bg_from_local('bg2.PNG')
 
 # Define a function for getting news from Finviz
-from datetime import datetime
 def preprocess_datetime(datetime_str):
     if "Today" in datetime_str:
         today = datetime.today()
@@ -88,7 +87,8 @@ def get_news_df(tickers):
         'headline': headlines
     })
     # Fill missing dates with the last known date
-    parsed_news_df['date'].fillna(method='ffill', inplace=True)
+    parsed_news_df['date'].ffill(inplace=True)
+    print("yesy2")
     # Combine 'date' and 'time' columns into 'datetime'
     parsed_news_df['datetime'] = pd.to_datetime(parsed_news_df['date'] + ' ' + parsed_news_df['time'])
     parsed_news_df['date'] = parsed_news_df['datetime'].dt.date
@@ -101,6 +101,7 @@ def get_news_df(tickers):
 
     # Print a message to confirm the file has been saved
     print(f"DataFrame saved to {csv_file_path}")
+    print("yes")
 
     return parsed_news_df
 
@@ -114,13 +115,17 @@ def score_news(parsed_news_df):
     scores_df = pd.DataFrame(scores)
     print(scores[0])
     parsed_and_scored_news = parsed_news_df.join(scores_df, rsuffix='_right')
+    print("yes3")
     parsed_and_scored_news['day_of_week'] = parsed_and_scored_news['datetime'].dt.day_name()
-    parsed_and_scored_news['week'] = parsed_and_scored_news['datetime'].dt.week
+    print("yes4")
+    parsed_and_scored_news['datetime']=pd.to_datetime(parsed_and_scored_news['datetime'])
+    print("yesy5")
+    parsed_and_scored_news['week'] = parsed_and_scored_news['datetime'].dt.strftime('%U').astype(int) + 1
     print("sent")
     parsed_and_scored_news = parsed_and_scored_news.set_index('datetime')
     print("sent2")
     print(parsed_and_scored_news.columns)
-    parsed_and_scored_news = parsed_and_scored_news.drop(['date', 'time'], 1)
+    parsed_and_scored_news = parsed_and_scored_news.drop(['date', 'time'], axis=1)
     print("sent3")
     parsed_and_scored_news = parsed_and_scored_news.rename(columns={"compound": "sentiment_score"})
     # Calculate the average sentiment score for each day of the week
@@ -155,8 +160,6 @@ def score_news(parsed_news_df):
     print(f"The week with the most negative sentiment is Week {most_negative_week} with an average score of {lowest_avg_sentimentw:.4f}")
     print(f"The week with the most positive sentiment is Week {most_positive_week} with an average score of {highest_avg_sentimentw:.4f}")
 
-
-
     # Print the results
     print(week_avg_sentiment)
     return parsed_and_scored_news,most_negative_day,lowest_avg_sentiment,most_positive_day,highest_avg_sentiment,most_negative_week,\
@@ -167,7 +170,9 @@ def score_news(parsed_news_df):
 def plot_hourly_sentiment(parsed_and_scored_news, ticker):
     print(parsed_and_scored_news.isna().sum())
     print("hour")
+    print(parsed_and_scored_news.head())
     mean_scores = parsed_and_scored_news.resample('H').mean()
+    # mean_scores = parsed_and_scored_news.pivot_table(index=parsed_and_scored_news.index.hour, columns=parsed_and_scored_news.index.date, values=['headline', 'neg', 'neu', 'pos', 'sentiment_score'], aggfunc='first')
     print(mean_scores)
     fig1 = px.bar(mean_scores, x=mean_scores.index, y='sentiment_score', title=f'{ticker} Hourly Sentiment Scores')
     # Create a column for color based on sentiment_score
