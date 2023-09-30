@@ -1,0 +1,101 @@
+date,time,headline,datetime,neg,neu,pos,sentiment_score
+2023-10-01,12:31PM,30 Most Influential Scientists of All Time,2023-10-01 12:31:00,0.0,0.653,0.347,0.4927
+2023-10-01,12:15PM,1 Artificial Intelligence (AI) Stock to Buy Now That Could Soar Like Nvidia,2023-10-01 12:15:00,0.0,0.641,0.359,0.6808
+2023-10-01,10:32AM,15 Best Beginner Stocks To Buy Now,2023-10-01 10:32:00,0.0,0.588,0.412,0.6369
+2023-10-01,08:15AM,Why YouTube Is the Real Threat to Disney,2023-10-01 08:15:00,0.327,0.673,0.0,-0.5267
+2023-10-01,08:00AM,Talking Digital Privacy With Cybersecurity Expert and Author Tom Kemp,2023-10-01 08:00:00,0.0,1.0,0.0,0.0
+2023-10-01,07:45AM,Energy consumption 'to dramatically increase' because of AI,2023-10-01 07:45:00,0.0,0.577,0.423,0.5267
+2023-10-01,07:25AM,6 Green Flags for Cloudflare's Future,2023-10-01 07:25:00,0.0,1.0,0.0,0.0
+2023-10-01,07:06AM,Can AI Imitate the 50 Greatest Classical Music Composers of All Time?,2023-10-01 07:06:00,0.0,0.724,0.276,0.6369
+2023-10-01,06:15AM,3 Stocks You Can Keep Forever,2023-10-01 06:15:00,0.0,1.0,0.0,0.0
+2023-10-01,06:11AM,"Got $5,000? Buy and Hold These 3 Value Stocks for Years",2023-10-01 06:11:00,0.0,0.789,0.211,0.34
+2023-10-01,05:50AM,"Every Artificial Intelligence (AI) Stock Warren Buffett Owns, Ranked From Best to Worst",2023-10-01 05:50:00,0.192,0.467,0.341,0.4939
+2023-10-01,03:52AM,Top 20 Cloud Computing Companies in USA,2023-10-01 03:52:00,0.0,0.769,0.231,0.2023
+2023-09-29,05:09PM,Google finally gave teens access to generative AI in search. They were probably already using it anyway,2023-09-29 17:09:00,0.0,1.0,0.0,0.0
+2023-09-29,03:56PM,20 Least Censored Countries with Most Internet Freedom,2023-09-29 15:56:00,0.0,0.503,0.497,0.7116
+2023-09-29,03:48PM,12 Best Places to Retire in Portugal,2023-09-29 15:48:00,0.0,0.588,0.412,0.6369
+2023-09-29,03:28PM,H&R Block faces a RICO lawsuit over alleged sale of taxpayer data to Meta and Google,2023-09-29 15:28:00,0.27,0.73,0.0,-0.5859
+2023-09-29,01:38PM,Supreme Court To Review Texas And Florida Social Media Laws,2023-09-29 13:38:00,0.0,0.714,0.286,0.5574
+2023-09-29,01:33PM,"Microsoft revealed this week that Apple used Bing as a bargaining chip with Google, but it reportedly considered buying it and bringing search in-house",2023-09-29 13:33:00,0.0,1.0,0.0,0.0
+2023-09-29,12:44PM,Google to rollout new Fitbit Charge 6 on October 6,2023-09-29 12:44:00,0.0,1.0,0.0,0.0
+2023-09-29,12:20PM,20 Most Influential Entrepreneurs Today,2023-09-29 12:20:00,0.0,0.556,0.444,0.4927
+2023-09-29,12:14PM,Expedia's (EXPE) Latest Goals to Boost Sustainability Efforts,2023-09-29 12:14:00,0.0,0.722,0.278,0.4019
+2023-09-29,09:00AM,Alphabet Inc. (GOOG) is Attracting Investor Attention: Here is What You Should Know,2023-09-29 09:00:00,0.0,0.795,0.205,0.4767
+2023-09-29,09:00AM,Google's 1265 Borregas Ave. is the Structures 2023 Green Project honoree,2023-09-29 09:00:00,0.0,0.763,0.237,0.4767
+2023-09-29,09:00AM,1265 Borregas Ave. is the Structures 2023 Green Project honoree,2023-09-29 09:00:00,0.0,0.744,0.256,0.4767
+2023-09-29,08:33AM,"Amazon (AMZN) Stock Quotes, Company News And Chart Analysis",2023-09-29 08:33:00,0.0,0.825,0.175,0.1779
+2023-09-29,07:10AM,#8217; Buy,2023-09-29 07:10:00,0.0,1.0,0.0,0.0
+2023-09-29,07:05AM,Amazon's Big AI Investment Just Put Microsoft and Alphabet on Notice,2023-09-29 07:05:00,0.0,1.0,0.0,0.0
+2023-09-29,06:25AM,"Here's What Investors Should Know About Amazon's AI Strategy, and Its $4 Billion Anthropic Bet",2023-09-29 06:25:00,0.0,1.0,0.0,0.0
+2023-09-28,06:49PM,Brad Gerstner: Google has been a tax collector on the internet for 20 years #Shorts #DeliveringAlpha,2023-09-28 18:49:00,0.0,1.0,0.0,0.0
+2023-09-28,05:48PM,Billionaire investor Bill Ackman: Alphabet will be a dominant player in AI,2023-09-28 17:48:00,0.0,1.0,0.0,0.0
+2023-09-28,05:38PM,Microsoft Discussed Selling Bing to Apple as Google Replacement,2023-09-28 17:38:00,0.0,1.0,0.0,0.0
+2023-09-28,05:28PM,Fitbit Charge 6 brings better heart rate tracking and deeper Google integration,2023-09-28 17:28:00,0.0,0.775,0.225,0.4404
+2023-09-28,05:11PM,Microsoft CEO Satya Nadella to testify on Monday in Google antitrust trial,2023-09-28 17:11:00,0.0,1.0,0.0,0.0
+2023-09-28,04:29PM,UPDATE 1-Microsoft executive says Google deals kept Bing small,2023-09-28 16:29:00,0.0,1.0,0.0,0.0
+2023-09-28,04:16PM,Your website can now opt out of training Google's Bard and future AIs,2023-09-28 16:16:00,0.0,1.0,0.0,0.0
+2023-09-28,03:57PM,Microsoft-Google Peace Deal Broke Down Over Search Competition,2023-09-28 15:57:00,0.228,0.488,0.285,0.1779
+2023-09-28,03:51PM,ChatGPT Bing Update Could Bolster Microsofts AI Standing,2023-09-28 15:51:00,0.0,1.0,0.0,0.0
+2023-09-28,02:28PM,Microsoft Considered Investing Billions in Apple Deal to Compete With Google Search,2023-09-28 14:28:00,0.0,1.0,0.0,0.0
+2023-09-28,12:45PM,Microsoft executive says Google deals kept Bing small,2023-09-28 12:45:00,0.0,1.0,0.0,0.0
+2023-09-28,12:00PM,Google is opening up its generative AI search experience to teenagers,2023-09-28 12:00:00,0.0,1.0,0.0,0.0
+2023-09-28,11:24AM,Alphabet (GOOGL) Boosts Chromebook Features With ChromeOS 117,2023-09-28 11:24:00,0.0,0.753,0.247,0.3182
+2023-09-28,11:07AM,2 AI Stocks to Keep on Your Watch List,2023-09-28 11:07:00,0.0,1.0,0.0,0.0
+2023-09-28,11:01AM,13 Best Big Data Stocks To Buy Now,2023-09-28 11:01:00,0.0,0.625,0.375,0.6369
+2023-09-28,10:17AM,15 Best U.S. Stocks to Buy Now Under $10,2023-09-28 10:17:00,0.0,0.656,0.344,0.6369
+2023-09-28,09:35AM,3 No-Brainer Warren Buffett Stocks to Buy Right Now,2023-09-28 09:35:00,0.0,1.0,0.0,0.0
+2023-09-28,08:45AM,A $90 Billion Valuation for OpenAI? Techs New Star Is Hotter Than Nvidia.,2023-09-28 08:45:00,0.0,1.0,0.0,0.0
+2023-09-28,08:00AM,Does Uber Stock Have 100% Upside Potential Over the Next 5 Years?,2023-09-28 08:00:00,0.0,1.0,0.0,0.0
+2023-09-28,07:37AM,"The Zacks Analyst Blog Highlights Alphabet, Exxon Mobil, Merck, Abbott Laboratories and NextEra Energy",2023-09-28 07:37:00,0.0,0.861,0.139,0.2732
+2023-09-28,06:45AM,15 Best Marketing Software for Small Businesses,2023-09-28 06:45:00,0.0,0.588,0.412,0.6369
+2023-09-28,06:06AM,"Zacks Earnings Trends Highlights: Meta Platforms, Alphabet and Nvidia",2023-09-28 06:06:00,0.0,1.0,0.0,0.0
+2023-09-28,05:30AM,Secrecy of Google Antitrust Trial Leads to Blame Game,2023-09-28 05:30:00,0.231,0.769,0.0,-0.34
+2023-09-28,05:23AM,20 Most Popular Business Hashtags on Instagram,2023-09-28 05:23:00,0.0,0.66,0.34,0.4754
+2023-09-28,05:21AM,"Wall Street's ""Magnificent Seven"" May Be a Mammoth Liability for the Stock Market",2023-09-28 05:21:00,0.115,0.637,0.248,0.4767
+2023-09-28,04:01AM,Flex to make Chromebooks for HP and Google in India from October,2023-09-28 04:01:00,0.0,1.0,0.0,0.0
+2023-09-28,01:06AM,REFILE-UPDATE 1-IT services firm Kyndryl plans to separate China business - FT,2023-09-28 01:06:00,0.0,1.0,0.0,0.0
+2023-09-28,12:41AM,Apples iPhone Cedes Ground to Googles Pixel in Japan,2023-09-28 00:41:00,0.0,1.0,0.0,0.0
+2023-09-27,07:04PM,15 Best US Cities for Public Transportation,2023-09-27 19:04:00,0.0,0.588,0.412,0.6369
+2023-09-27,06:32PM,Google DeepMind Alum Raises $14 Million for AI VC Firm,2023-09-27 18:32:00,0.0,1.0,0.0,0.0
+2023-09-27,05:31PM,"US government shutdown won't stop Google antitrust trial, judge says",2023-09-27 17:31:00,0.0,0.827,0.173,0.2235
+2023-09-27,04:43PM,"Top Stock Reports for Alphabet, Exxon Mobil & Merck",2023-09-27 16:43:00,0.0,0.795,0.205,0.2023
+2023-09-27,04:29PM,Facebook Needs to Continue Covering Metas Expensive Quest,2023-09-27 16:29:00,0.0,1.0,0.0,0.0
+2023-09-27,04:27PM,Google created hurdles to protect smartphone foothold -small search firm,2023-09-27 16:27:00,0.0,0.635,0.365,0.5574
+2023-09-27,04:15PM,Even the Google Trial Is Talking Up the Taylor Swift-Travis Kelce Rumors,2023-09-27 16:15:00,0.0,1.0,0.0,0.0
+2023-09-27,03:33PM,"Apple leverages idea of switching to Bing to pry more money out of Google, Microsoft exec says",2023-09-27 15:33:00,0.0,1.0,0.0,0.0
+2023-09-27,02:26PM,Amazons $4 billion splash into the AI wars,2023-09-27 14:26:00,0.439,0.561,0.0,-0.5719
+2023-09-27,02:06PM,Microsoft Says Apple Used Bing as Google Bargaining Chip,2023-09-27 14:06:00,0.0,1.0,0.0,0.0
+2023-09-27,11:47AM,"Apple Defends Its $19B Google Search Deal, Hollywood's Writers Secure Credit For AI Training, China's Ambitious Chip Fund Faces Headwinds: Today's Top Stories",2023-09-27 11:47:00,0.0,0.657,0.343,0.836
+2023-09-27,11:36AM,There's only one smartphone brand selling more devices in Q2 and it isn't who you might think,2023-09-27 11:36:00,0.0,1.0,0.0,0.0
+2023-09-27,11:20AM,Amazon and These 2 Other Tech Giants Need to Start Paying Dividends,2023-09-27 11:20:00,0.0,0.855,0.145,0.1779
+2023-09-27,10:37AM,"FTC sues Amazon: Buy the dip in the stock, analyst says",2023-09-27 10:37:00,0.0,0.855,0.145,0.1779
+2023-09-27,10:15AM,Better Artificial Intelligence (AI) Stock: Microsoft vs. Alphabet,2023-09-27 10:15:00,0.0,0.5,0.5,0.7184
+2023-09-27,10:09AM,Apple exec Eddy Cue on Google search: 'There wasn't a valid alternative',2023-09-27 10:09:00,0.0,1.0,0.0,0.0
+2023-09-27,09:00AM,Here is What to Know Beyond Why Alphabet Inc. (GOOGL) is a Trending Stock,2023-09-27 09:00:00,0.0,1.0,0.0,0.0
+2023-09-27,08:00AM,How To Trade Stocks: Breakout From Bottoming Base Yielded Ideal Entry For This FANG Stock,2023-09-27 08:00:00,0.0,0.805,0.195,0.5267
+2023-09-27,06:00AM,RPT-TIMELINE-Google's 25-year journey from dorm to internet dominance,2023-09-27 06:00:00,0.0,0.795,0.205,0.2023
+2023-09-27,06:00AM,2 Stocks to Buy in an Unstoppable Industry,2023-09-27 06:00:00,0.231,0.769,0.0,-0.2023
+2023-09-27,05:20AM,2 Super Stocks to Buy During the Latest Sell-Off in the Nasdaq,2023-09-27 05:20:00,0.0,0.719,0.281,0.5994
+2023-09-27,02:54AM,Google launches earthquake alerts on Android in India,2023-09-27 02:54:00,0.0,1.0,0.0,0.0
+2023-09-27,02:11AM,UPDATE 2-PwC Australia gave clients other than Google confidential tax info,2023-09-27 02:11:00,0.0,1.0,0.0,0.0
+2023-09-26,05:03PM,Google's 25-year journey from dorm to internet dominance,2023-09-26 17:03:00,0.0,0.795,0.205,0.2023
+2023-09-26,05:01PM,TIMELINE-Google's 25-year journey from dorm to internet dominance,2023-09-26 17:01:00,0.0,0.795,0.205,0.2023
+2023-09-26,04:08PM,"Apple, Google agreed to defend search deal from regulators",2023-09-26 16:08:00,0.0,0.792,0.208,0.2732
+2023-09-26,04:00PM,"Nvidia, Tesla, Meta And More Reveal Rules For Agonizing Market",2023-09-26 16:00:00,0.291,0.709,0.0,-0.5719
+2023-09-26,01:26PM,Deepfake election risks trigger EU call for more generative AI safeguards,2023-09-26 13:26:00,0.153,0.654,0.194,0.144
+2023-09-26,01:17PM,"Google Trial Spills Details on Search Engines Deals With Apple, Samsung",2023-09-26 13:17:00,0.0,1.0,0.0,0.0
+2023-09-26,12:35PM,Apple exec defends the decision to make Google its default search engine on iPhones and Macs,2023-09-26 12:35:00,0.0,1.0,0.0,0.0
+2023-09-26,12:29PM,"FTC files antitrust suit against Amazon, alleges retail site is illegal monopoly",2023-09-26 12:29:00,0.235,0.654,0.111,-0.4404
+2023-09-26,12:29PM,"FTC files antitrust suit against Amazon, alleges company operates illegal monopoly",2023-09-26 12:29:00,0.252,0.629,0.119,-0.4404
+2023-09-26,12:12PM,UPDATE 5-Amazon faces landmark monopoly lawsuit by FTC,2023-09-26 12:12:00,0.207,0.652,0.141,-0.1531
+2023-09-26,12:10PM,Alphabet Inc (GOOGL): A Deep Dive into Financial Metrics and Competitive Strengths,2023-09-26 12:10:00,0.0,0.672,0.328,0.5267
+2023-09-26,12:03PM,US sues Amazon.com in landmark monopoly case after four-year probe,2023-09-26 12:03:00,0.0,0.874,0.126,0.0772
+2023-09-26,12:00PM,U.S. sues Amazon.com for breaking antitrust law and harming consumers,2023-09-26 12:00:00,0.286,0.714,0.0,-0.5574
+2023-09-26,11:42AM,Alphabet (GOOGL): A Modestly Undervalued Gem in the Market?,2023-09-26 11:42:00,0.0,1.0,0.0,0.0
+2023-09-26,11:40AM,Unveiling Alphabet (GOOG)'s Value: Is It Really Priced Right? A Comprehensive Guide,2023-09-26 11:40:00,0.0,0.659,0.341,0.5667
+2023-09-26,10:52AM,Amazon (AMZN) Strengthens eero Portfolio With Latest Launch,2023-09-26 10:52:00,0.0,0.561,0.439,0.5719
+2023-09-26,10:45AM,"UPDATE 1-Resist Russian disinformation as elections loom, EU tells Big Tech",2023-09-26 10:45:00,0.16,0.84,0.0,-0.2263
+2023-09-26,09:57AM,A top Apple exec is coming to Google's rescue in DOJ antitrust case,2023-09-26 09:57:00,0.0,0.662,0.338,0.6249
+2023-09-26,09:53AM,3 Things About Alphabet That Smart Investors Know,2023-09-26 09:53:00,0.0,0.69,0.31,0.4019
+2023-09-26,09:44AM,Google Podcasts to shut down in 2024 with listeners migrated to YouTube Music,2023-09-26 09:44:00,0.0,1.0,0.0,0.0
+2023-09-26,09:34AM,"Sam Altman May Be the Top Dog in AI, but Amazon Is Betting $4 Billion on This Up-and-Coming AI Power Duo",2023-09-26 09:34:00,0.0,0.846,0.154,0.3506

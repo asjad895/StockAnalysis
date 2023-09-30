@@ -1,0 +1,101 @@
+date,time,headline,datetime,neg,neu,pos,sentiment_score
+2023-10-01,01:01PM,These Are The 12 Stocks Driving The S&P 500 Higher In 2023,2023-10-01 13:01:00,0.0,1.0,0.0,0.0
+2023-10-01,12:22PM,30 Countries with the Cleanest Air in the World,2023-10-01 12:22:00,0.0,1.0,0.0,0.0
+2023-09-29,12:06PM,"General Electric (GE), EnergyHub Team-Up for Grid Optimization",2023-09-29 12:06:00,0.0,0.729,0.271,0.3818
+2023-09-28,04:07PM,"GE must face shareholder lawsuit over accounting, disclosures; judge urges settlement",2023-09-28 16:07:00,0.16,0.84,0.0,-0.2263
+2023-09-28,08:14AM,General Electric's (GE) Unit Signs MOC With Ukrhydroenergo,2023-09-28 08:14:00,0.0,1.0,0.0,0.0
+2023-09-26,08:00PM,Should Investors Buy General Electric or General Mills Stock Right Now?,2023-09-26 20:00:00,0.0,1.0,0.0,0.0
+2023-09-26,06:48AM,GE Aerospace's CFM engines at heart of growing global probe grounding planes due to illegal aircraft parts,2023-09-26 06:48:00,0.177,0.739,0.084,-0.4404
+2023-09-25,01:29PM,"Could slumping industrial, small cap stocks be good or bad?",2023-09-25 13:29:00,0.243,0.556,0.201,-0.1531
+2023-09-24,05:36AM,"Up 125%, This Blue Chip Stock Has 1 Key Advantage That's Helping Investors Become Richer",2023-09-24 05:36:00,0.0,0.591,0.409,0.765
+2023-09-23,08:00AM,Meta Stock Leads 5 Names Showing Resilience In Market Downturn,2023-09-23 08:00:00,0.0,1.0,0.0,0.0
+2023-09-22,04:00PM,Can This Industrial Giant Spring Even Higher After 152% Gain?,2023-09-22 16:00:00,0.0,0.726,0.274,0.5267
+2023-09-22,11:59AM,Markel (MKL) Gains 15% YTD: Will It Retain the Bull Run?,2023-09-22 11:59:00,0.0,0.806,0.194,0.34
+2023-09-22,11:35AM,"Best Buy, GE HealthCare looking to expand retail healthcare presence",2023-09-22 11:35:00,0.0,0.552,0.448,0.7579
+2023-09-22,05:14AM,UPDATE 1-Safran CEO sees supply chain pressure through 2024,2023-09-22 05:14:00,0.216,0.784,0.0,-0.296
+2023-09-21,03:46PM,Time to Buy Stocks in September?,2023-09-21 15:46:00,0.0,1.0,0.0,0.0
+2023-09-21,01:52PM,UPDATE 2-FAA issues alert to inspect some jet engines for unapproved parts,2023-09-21 13:52:00,0.164,0.685,0.151,-0.0516
+2023-09-21,01:14PM,FAA issues alert to inspect some jet engines for unapproved part,2023-09-21 13:14:00,0.176,0.662,0.162,-0.0516
+2023-09-21,10:26AM,General Electric (GE) Upgrades Qairokkum Plant in Tajikistan,2023-09-21 10:26:00,0.0,1.0,0.0,0.0
+2023-09-21,09:04AM,"Zacks Industry Outlook Highlights General Electric, 3M Company and ITT.",2023-09-21 09:04:00,0.0,1.0,0.0,0.0
+2023-09-21,05:00AM,Corporate America Brings Its New Skinny Look to Stock Market,2023-09-21 05:00:00,0.0,1.0,0.0,0.0
+2023-09-20,01:01PM,UPDATE 2-UK firm sold thousands of unverified jet engine parts -CFM,2023-09-20 13:01:00,0.0,1.0,0.0,0.0
+2023-09-20,12:07PM,General Electric and Safran initiate legal proceedings against AOG Technics over alleged fake components,2023-09-20 12:07:00,0.187,0.723,0.09,-0.3818
+2023-09-20,10:58AM,General Electric (GE) Unit Wins Transformer Deal in Germany,2023-09-20 10:58:00,0.0,0.684,0.316,0.5719
+2023-09-20,10:57AM,GE Tells Judge UK Firm Sold Thousands of Bogus Jet-Engine Parts,2023-09-20 10:57:00,0.0,1.0,0.0,0.0
+2023-09-20,08:37AM,UK firm sold thousands of unverified jet engine parts - CFM,2023-09-20 08:37:00,0.0,1.0,0.0,0.0
+2023-09-20,08:35AM,CORRECTED-Engine maker CFM says up to 96 planes affected by fake parts probe,2023-09-20 08:35:00,0.299,0.701,0.0,-0.5719
+2023-09-19,11:10AM,10 Best 3D Printing and Additive Manufacturing Stocks To Buy,2023-09-19 11:10:00,0.0,0.682,0.318,0.6369
+2023-09-19,10:38AM,3 Top Stocks From the Flourishing Diversified Operations Industry,2023-09-19 10:38:00,0.0,0.795,0.205,0.2023
+2023-09-19,08:34AM,"The Zacks Analyst Blog Highlights Caterpillar, General Electric, Dell Technologies, Automatic Data Processing and Apollo Global Management",2023-09-19 08:34:00,0.0,1.0,0.0,0.0
+2023-09-18,01:03PM,Momentum Mondays: Stocks Breaking Out Ahead of the Fed Meeting,2023-09-18 13:03:00,0.0,1.0,0.0,0.0
+2023-09-18,09:30AM,5 High-Flying Bigwigs in Past 3 Months With Room for Growth,2023-09-18 09:30:00,0.0,0.755,0.245,0.3818
+2023-09-15,02:04PM,"GE HealthCare targets innovation hub in Waukesha, better supplier relations: CEO",2023-09-15 14:04:00,0.0,0.621,0.379,0.6705
+2023-09-14,06:03PM,GE Stock Jumped. There Is a Good Reason For That: Cash.,2023-09-14 18:03:00,0.0,0.756,0.244,0.4404
+2023-09-14,01:11PM,"GE to sell $2.4B equity stake in AerCap ahead of GE Vernova spinoff, transition to GE Aerospace",2023-09-14 13:11:00,0.0,1.0,0.0,0.0
+2023-09-14,11:48AM,General Electric's (GE) Unit Unveils AI-Powered Software,2023-09-14 11:48:00,0.0,1.0,0.0,0.0
+2023-09-13,08:59AM,14 Good Stocks To Invest In Right Now,2023-09-13 08:59:00,0.0,0.707,0.293,0.4404
+2023-09-12,04:47PM,"GE, IBD Stock Of The Day, Flashes Buy Signal After 76% Rally In 2023",2023-09-12 16:47:00,0.0,1.0,0.0,0.0
+2023-09-12,01:55PM,"Amazon Stock, Carvana, Uber Boast This Key Sign Of Stock Market Leadership",2023-09-12 13:55:00,0.0,0.866,0.134,0.1779
+2023-09-12,11:25AM,General Electric (GE) Signs MOU to Explore CCUS Value Chain,2023-09-12 11:25:00,0.0,0.789,0.211,0.34
+2023-09-11,06:38PM,GE to sell $2.44 billion stake in aircraft leasing provider AerCap,2023-09-11 18:38:00,0.0,1.0,0.0,0.0
+2023-09-09,04:18AM,"Airlines, Engine Makers Race to Track Down Bogus Spare Parts",2023-09-09 04:18:00,0.0,1.0,0.0,0.0
+2023-09-08,12:27PM,GE Board of Directors Authorizes Regular Quarterly Dividend,2023-09-08 12:27:00,0.0,1.0,0.0,0.0
+2023-09-08,10:54AM,"UPDATE 3-Biden, Modi discuss rail deal, democracy as U.S. press sidelined",2023-09-08 10:54:00,0.0,1.0,0.0,0.0
+2023-09-08,09:53AM,"As Biden, Modi, Yellen meet before G20, press may be barred",2023-09-08 09:53:00,0.0,1.0,0.0,0.0
+2023-09-07,07:26PM,"Biden and Modi to make progress on GE jet engines, nuclear - White House",2023-09-07 19:26:00,0.0,0.811,0.189,0.4215
+2023-09-07,08:37AM,GE Aerospace selected by Bell for V-280 Valor Future Long-Range Assault Aircraft,2023-09-07 08:37:00,0.257,0.743,0.0,-0.5859
+2023-09-06,04:17PM,GE Blows Minds With Celebs and CEOs Event,2023-09-06 16:17:00,0.0,1.0,0.0,0.0
+2023-09-06,07:48AM,"The Zacks Analyst Blog Highlights Caterpillar, General Electric and Sherwin Williams",2023-09-06 07:48:00,0.0,1.0,0.0,0.0
+2023-09-05,12:53PM,General Electric (GE) Up 36% YTD: Will the Momentum Continue?,2023-09-05 12:53:00,0.0,1.0,0.0,0.0
+2023-09-05,10:19AM,"Gabelli Funds to Host 29th Annual Aerospace & Defense Symposium at The Harvard Club, New York, NY",2023-09-05 10:19:00,0.0,0.909,0.091,0.128
+2023-09-05,07:30AM,Attention C-Suite: New GE Study Finds Divergent Views on Leadership Development,2023-09-05 07:30:00,0.0,1.0,0.0,0.0
+2023-09-02,08:00AM,Labor Day Sale: Tesla Leads Top 5 Stocks Near Buy Points,2023-09-02 08:00:00,0.0,0.833,0.167,0.2023
+2023-09-01,11:49AM,General Electric (GE) Upgrades Hydro Power Plant in Canada,2023-09-01 11:49:00,0.0,1.0,0.0,0.0
+2023-08-31,10:58PM,List of 55 Artificial Intelligence Companies in USA,2023-08-31 22:58:00,0.0,0.693,0.307,0.4767
+2023-08-30,10:27AM,Russian-U.S. venture scraps plan to build GE-licensed turbines in Russia,2023-08-30 10:27:00,0.0,1.0,0.0,0.0
+2023-08-29,10:07PM,7 Stocks the Big Money Is Buying Now,2023-08-29 22:07:00,0.0,1.0,0.0,0.0
+2023-08-29,12:24PM,General Electric (GE) Upgrades Futtsu Power Plant in Japan,2023-08-29 12:24:00,0.0,1.0,0.0,0.0
+2023-08-29,12:06PM,General Electric Co (GE): A Deep Dive into Its Performance Potential,2023-08-29 12:06:00,0.0,1.0,0.0,0.0
+2023-08-27,05:30AM,Please Support This Ice Maker: Big Manufacturers Try Crowdfunding to Market-Test Products,2023-08-27 05:30:00,0.0,0.667,0.333,0.6124
+2023-08-25,01:37PM,GE Assembles Leadership Team for Energy Spinoff,2023-08-25 13:37:00,0.0,0.741,0.259,0.2732
+2023-08-25,11:53AM,"General Electric (GE), AWS Collaborate to Boost Digitization",2023-08-25 11:53:00,0.0,0.722,0.278,0.4019
+2023-08-25,10:20AM,GE Shakes Up Management Ahead of Renewable Energy Spinoff,2023-08-25 10:20:00,0.0,0.792,0.208,0.2732
+2023-08-25,07:23AM,11 Most Undervalued Dow Stocks To Buy According To Hedge Funds,2023-08-25 07:23:00,0.0,1.0,0.0,0.0
+2023-08-24,05:00PM,GE Vernova Announces Two Additions to Leadership Team,2023-08-24 17:00:00,0.0,1.0,0.0,0.0
+2023-08-24,12:08PM,General Electric (GE) Unit Wins Gas Turbine Order in China,2023-08-24 12:08:00,0.0,0.709,0.291,0.5719
+2023-08-23,05:49PM,11 Most Undervalued Renewable Energy Stocks to Buy According to Hedge Funds,2023-08-23 17:49:00,0.0,0.823,0.177,0.3321
+2023-08-23,01:10PM,General Electric (GE) Unit to Upgrade Xiangjiaba Plant in China,2023-08-23 13:10:00,0.0,1.0,0.0,0.0
+2023-08-22,02:38PM,These 3 Quarterly Releases Positively Shocked Investors,2023-08-22 14:38:00,0.237,0.412,0.351,0.2732
+2023-08-22,01:30PM,Markel (MKL) Rises 22% in a Year: Should You Buy the Stock?,2023-08-22 13:30:00,0.0,1.0,0.0,0.0
+2023-08-21,03:27PM,Executive who helped lead GE HealthCare IPO joins top ranks at Clarios,2023-08-21 15:27:00,0.0,0.859,0.141,0.2023
+2023-08-21,09:30AM,Wall Street Bulls Look Optimistic About GE (GE): Should You Buy?,2023-08-21 09:30:00,0.0,0.813,0.187,0.3182
+2023-08-18,07:39AM,Stanley Druckenmiller 13F Portfolio: Top 15 Stocks,2023-08-18 07:39:00,0.0,0.769,0.231,0.2023
+2023-08-16,01:25PM,GE HealthCare Is an Alzheimers Stock. Shares Gain on New Buy Rating.,2023-08-16 13:25:00,0.0,0.641,0.359,0.6808
+2023-08-16,11:09AM,"General Electric (GE) Buys Greenbird, Enhances GridOS Platform",2023-08-16 11:09:00,0.0,1.0,0.0,0.0
+2023-08-16,09:05AM,Does GE HealthCare Technologies (GEHC) have a Compelling Valuation at the Current Level?,2023-08-16 09:05:00,0.0,0.853,0.147,0.2263
+2023-08-16,12:17AM,The controversy around share buybacks,2023-08-16 00:17:00,0.0,0.645,0.355,0.296
+2023-08-15,11:15AM,"ITT Benefits From Strength in End-Markets, Acquired Assets",2023-08-15 11:15:00,0.0,0.4,0.6,0.7579
+2023-08-15,10:25AM,J&Js Kenvue Spinoff Is Almost Here. What to Do Now.,2023-08-15 10:25:00,0.0,1.0,0.0,0.0
+2023-08-14,04:49PM,Dodge & Cox's Q2 2023 13F Filing Update: Key Transactions and Portfolio Overview,2023-08-14 16:49:00,0.0,1.0,0.0,0.0
+2023-08-14,02:27PM,J&J Investors Need to Decide Soon if They Want Kenvue Stock,2023-08-14 14:27:00,0.0,0.885,0.115,0.0772
+2023-08-14,01:11PM,GE Vernova Acquires Greenbird to Accelerate GridOS® Innovation and Help Utilities Reduce the Complexity of Energy Data Integration,2023-08-14 13:11:00,0.0,0.67,0.33,0.7506
+2023-08-13,04:24PM,10 Jim Cramer Stock Picks this Week,2023-08-13 16:24:00,0.0,1.0,0.0,0.0
+2023-08-13,09:00AM,Investors in General Electric (NYSE:GE) have seen impressive returns of 179% over the past three years,2023-08-13 09:00:00,0.0,0.82,0.18,0.5106
+2023-08-11,11:22AM,GE 'One Of The Best' Defensive Stocks Due To GE Aerospace  Is It A Buy?,2023-08-11 11:22:00,0.0,0.694,0.306,0.6486
+2023-08-11,05:00AM,"Zacks Market Edge Highlights: AMZN, GE, MAR, OFG and TREX",2023-08-11 05:00:00,0.0,1.0,0.0,0.0
+2023-08-10,12:51PM,"Want to Make $1,000 in 2 Weeks? Buy 99 Shares of J&J Stock.",2023-08-10 12:51:00,0.0,0.741,0.259,0.3612
+2023-08-10,11:47AM,5 Red Hot Stocks to Buy Now,2023-08-10 11:47:00,0.0,1.0,0.0,0.0
+2023-08-09,08:52AM,20 Biggest Internet of Things Companies in the World,2023-08-09 08:52:00,0.0,1.0,0.0,0.0
+2023-08-08,05:49PM,Analyst Report: General Electric Company,2023-08-08 17:49:00,0.0,1.0,0.0,0.0
+2023-08-07,04:02PM,UPDATE 2-UK raises national security concerns over EDF deal to buy GE unit,2023-08-07 16:02:00,0.0,0.833,0.167,0.34
+2023-08-07,02:46PM,UK raises national security concerns from EDF/GE deal,2023-08-07 14:46:00,0.0,0.745,0.255,0.34
+2023-08-07,08:17AM,Weekly Stock List,2023-08-07 08:17:00,0.0,1.0,0.0,0.0
+2023-08-06,04:18PM,7 Top Stocks Billionaires Are Loading Up On,2023-08-06 16:18:00,0.0,0.769,0.231,0.2023
+2023-08-06,09:20AM,"Up More Than 90% in a Year, Is GE Still a Value Stock?",2023-08-06 09:20:00,0.0,0.806,0.194,0.34
+2023-08-05,09:00AM,"At US$113, Is General Electric Company (NYSE:GE) Worth Looking At Closely?",2023-08-05 09:00:00,0.0,0.84,0.16,0.2263
+2023-08-04,03:58PM,Is GE Stock A Buy After Its Flight To Highs? All Eyes On GE Aerospace.,2023-08-04 15:58:00,0.0,1.0,0.0,0.0
+2023-08-04,07:46AM,3 Momentum Anomaly Stocks to Buy Amid Fitch-Induced Selloff,2023-08-04 07:46:00,0.0,1.0,0.0,0.0
+2023-08-04,06:58AM,Logistics firm XPO beats profit estimates aided by cost cuts,2023-08-04 06:58:00,0.168,0.611,0.221,0.1779
+2023-08-03,11:38AM,Markel (MKL) Q2 Earnings Top Estimates on Higher Premiums,2023-08-03 11:38:00,0.0,0.816,0.184,0.2023
+2023-08-02,07:45AM,2 Healthcare AI Stocks That Could Go Parabolic,2023-08-02 07:45:00,0.0,1.0,0.0,0.0

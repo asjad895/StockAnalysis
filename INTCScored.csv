@@ -1,0 +1,101 @@
+date,time,headline,datetime,neg,neu,pos,sentiment_score
+2023-10-01,03:52AM,Top 20 Cloud Computing Companies in USA,2023-10-01 03:52:00,0.0,0.769,0.231,0.2023
+2023-09-29,12:13PM,UPDATE 1-Intel hails 'landmark' as high-volume EUV production begins at Irish plant,2023-09-29 12:13:00,0.0,1.0,0.0,0.0
+2023-09-29,11:47AM,"What Intel, Micron, and Qualcomm Stock Investors Should Know About Recent Semiconductor Updates",2023-09-29 11:47:00,0.0,1.0,0.0,0.0
+2023-09-29,08:02AM,Intel hails 'landmark' as high-volume EUV production begins at Irish plant,2023-09-29 08:02:00,0.0,1.0,0.0,0.0
+2023-09-29,08:00AM,Intels New Fab in Ireland Begins High-Volume Production of Intel 4 Technology,2023-09-29 08:00:00,0.0,0.769,0.231,0.4588
+2023-09-29,12:00AM,Bidens $100 Billion Chip Bet Caught Up in Arizona Union Showdown,2023-09-29 00:00:00,0.0,1.0,0.0,0.0
+2023-09-28,07:40AM,"Intel, TSM And Samsung Are Point Players In U.S. Construction Boom",2023-09-28 07:40:00,0.0,1.0,0.0,0.0
+2023-09-28,06:50AM,2 Growth Stocks to Invest $500 in Right Now,2023-09-28 06:50:00,0.0,0.729,0.271,0.3818
+2023-09-28,06:40AM,Intel Will Bring Its AI-Infused Meteor Lake Chips to Desktops in 2024,2023-09-28 06:40:00,0.0,1.0,0.0,0.0
+2023-09-28,06:05AM,Is It Finally Time to Sell Nvidia Stock?,2023-09-28 06:05:00,0.0,1.0,0.0,0.0
+2023-09-28,03:30AM,Heard on the Street Recap: Mixed Messages,2023-09-28 03:30:00,0.0,1.0,0.0,0.0
+2023-09-27,04:00PM,Media Alert: Intel Starts High-Volume EUV Production in Ireland,2023-09-27 16:00:00,0.0,0.784,0.216,0.296
+2023-09-27,10:00AM,Apple Delays Newest Processor Rollout -- Is Taiwan Semi Manufacturing in Deep Trouble?,2023-09-27 10:00:00,0.184,0.816,0.0,-0.4019
+2023-09-27,09:45AM,Synopsys (SNPS) Unveils Automotive-Grade IP for N5A Process,2023-09-27 09:45:00,0.0,1.0,0.0,0.0
+2023-09-26,02:53PM,AIs leap from the cloud to your laptop could fix some of the technologys weak spots,2023-09-26 14:53:00,0.162,0.838,0.0,-0.4404
+2023-09-26,10:02AM,Better Chip Stock: Arm Holdings vs. Intel,2023-09-26 10:02:00,0.0,0.674,0.326,0.4404
+2023-09-26,09:00AM,These 2 Computer and Technology Stocks Could Beat Earnings: Why They Should Be on Your Radar,2023-09-26 09:00:00,0.0,1.0,0.0,0.0
+2023-09-26,07:16AM,5 Things to Know Before Markets Open,2023-09-26 07:16:00,0.0,1.0,0.0,0.0
+2023-09-26,12:17AM,Intels Big Chip-Making Push in Germany Hits Bottleneck,2023-09-26 00:17:00,0.0,1.0,0.0,0.0
+2023-09-25,05:45PM,Intel (INTC) Gains But Lags Market: What You Should Know,2023-09-25 17:45:00,0.251,0.618,0.131,-0.3716
+2023-09-25,02:48PM,"What AMD, Intel, and Nvidia Stock Investors Should Know About Recent AI Updates",2023-09-25 14:48:00,0.0,1.0,0.0,0.0
+2023-09-25,10:08AM,Dow Jones Sees Drop Driven by 3M and Jpmorgan Chase Shares,2023-09-25 10:08:00,0.158,0.677,0.165,0.0258
+2023-09-25,05:15AM,1 Massive Overlooked Risk for Intel and AMD,2023-09-25 05:15:00,0.39,0.61,0.0,-0.296
+2023-09-24,05:00PM,Intel Editorial: Intel Addresses Semiconductor Workforce Shortage,2023-09-24 17:00:00,0.25,0.75,0.0,-0.25
+2023-09-24,08:15AM,Intel's Meteor Lake Gamble Could Pay Off,2023-09-24 08:15:00,0.189,0.811,0.0,-0.1027
+2023-09-24,08:05AM,"After Intel's Failed Acquisition, Is Tower Semiconductor Stock a Buy?",2023-09-24 08:05:00,0.292,0.708,0.0,-0.5106
+2023-09-24,05:30AM,Better AI Value Stock: Micron vs. Intel,2023-09-24 05:30:00,0.0,0.485,0.515,0.6486
+2023-09-23,11:15AM,Is ASML Stock a Top Buy Right Now?,2023-09-23 11:15:00,0.0,0.769,0.231,0.2023
+2023-09-23,06:55AM,Arm Holdings' Data Center Dreams Will Need to Overcome Intel's 288-Core Behemoth,2023-09-23 06:55:00,0.0,0.803,0.197,0.4019
+2023-09-22,03:47PM,20 Most Innovative Companies in America,2023-09-22 15:47:00,0.0,0.61,0.39,0.4927
+2023-09-22,01:02PM,Chip Stocks Cant Catch a Break. Why the Pain Might Continue.,2023-09-22 13:02:00,0.268,0.732,0.0,-0.5106
+2023-09-22,07:09AM,EU hits Intel with $400 million antitrust fine in long-running computer chip case,2023-09-22 07:09:00,0.0,0.87,0.13,0.2023
+2023-09-22,05:48AM,Intel hit with $400 million EU antitrust fine in decades-old case,2023-09-22 05:48:00,0.0,0.847,0.153,0.2023
+2023-09-22,05:21AM,The Ironic Reason Artificial Intelligence (AI) Stock Nvidia Could Massively Underperform in 2024,2023-09-22 05:21:00,0.096,0.705,0.199,0.3818
+2023-09-21,11:53PM,2 Dirt-Cheap AI Stocks for the Value-Conscious,2023-09-21 23:53:00,0.0,1.0,0.0,0.0
+2023-09-21,06:11PM,What Investors Need to Know About Intel and TSMC's Unique Relationship -- They're More Than Just Competitors,2023-09-21 18:11:00,0.0,1.0,0.0,0.0
+2023-09-21,04:00PM,Intel CEO Pat Gelsinger Touts 4 Upcoming Chips Amid a Cutthroat A.I. Race,2023-09-21 16:00:00,0.099,0.901,0.0,-0.0258
+2023-09-21,07:45AM,Is AMD Stock A Buy Ahead Of Chipmaker's Third-Quarter Report?,2023-09-21 07:45:00,0.0,1.0,0.0,0.0
+2023-09-21,05:30AM,"Intel sees massive demand for AI chips designed for China amid LLM boom and US export curbs, report says",2023-09-21 05:30:00,0.077,0.923,0.0,-0.128
+2023-09-21,05:15AM,Is Arm Holdings Stock a Buy Now?,2023-09-21 05:15:00,0.0,1.0,0.0,0.0
+2023-09-20,05:17PM,S&P 500 Gains and Losses Today: Index Falls as Fed Signals Another Rate Hike This Year,2023-09-20 17:17:00,0.141,0.733,0.126,-0.0772
+2023-09-20,04:56PM,Why Intel Stock Took a Hit After Intel Innovation 2023 -- Is It an Overreaction?,2023-09-20 16:56:00,0.104,0.736,0.16,0.2263
+2023-09-20,04:47PM,"These Stocks Are Moving the Most Today: Klaviyo, Instacart, ARS Pharma, Steelcase, Textron, Zebra Tech, and More",2023-09-20 16:47:00,0.0,1.0,0.0,0.0
+2023-09-20,03:47PM,AI Is Expected To Fuel Up Micron's And Intel's Turnaround,2023-09-20 15:47:00,0.0,1.0,0.0,0.0
+2023-09-20,01:31PM,Why Intel Stock Dipped by More Than 2% Today,2023-09-20 13:31:00,0.0,1.0,0.0,0.0
+2023-09-20,12:46PM,Markets Mixed at Midday Ahead of the Fed's Interest Rate Decision,2023-09-20 12:46:00,0.0,0.769,0.231,0.4588
+2023-09-20,12:39PM,"Intel shares dip on CFO's unsettling comments, future of chip foundry venture uncertain",2023-09-20 12:39:00,0.143,0.714,0.143,0.0
+2023-09-20,12:35PM,Intel Innovation 2023: Accelerating the Convergence of AI and Security,2023-09-20 12:35:00,0.0,0.615,0.385,0.6124
+2023-09-20,11:45AM,"Intel 'late' to AI, but shouldn't be ruled out yet: Analyst",2023-09-20 11:45:00,0.0,1.0,0.0,0.0
+2023-09-20,10:33AM,Intel Stock Drops. Why Analysts Are Skeptical It Can Take On Nvidia.,2023-09-20 10:33:00,0.173,0.827,0.0,-0.3182
+2023-09-20,09:49AM,These 2 Dow Stocks Could Face a Tough Time Ahead,2023-09-20 09:49:00,0.176,0.824,0.0,-0.128
+2023-09-20,09:04AM,Intel Wants Nvidias AI Crown. Why Analysts Are Skeptical.,2023-09-20 09:04:00,0.223,0.777,0.0,-0.3182
+2023-09-20,09:00AM,Investors Heavily Search Intel Corporation (INTC): Here is What You Need to Know,2023-09-20 09:00:00,0.0,1.0,0.0,0.0
+2023-09-20,08:38AM,Should AMD Stock Investors Be Worried About Intel's Latest Updates?,2023-09-20 08:38:00,0.196,0.804,0.0,-0.296
+2023-09-20,08:34AM,Can Intel Take the AI Crown From Nvidia?,2023-09-20 08:34:00,0.0,1.0,0.0,0.0
+2023-09-20,08:30AM,Is Intel Stock Really Cheap Right Now?,2023-09-20 08:30:00,0.0,1.0,0.0,0.0
+2023-09-20,06:32AM,The Fed Is Unsure About 2024. Why Thats a Problem for Markets.,2023-09-20 06:32:00,0.343,0.657,0.0,-0.5719
+2023-09-20,06:30AM,2 Overheated Chip Stocks to Avoid at All Costs,2023-09-20 06:30:00,0.239,0.761,0.0,-0.296
+2023-09-19,08:43PM,Analyst Report: Intel Corporation,2023-09-19 20:43:00,0.0,1.0,0.0,0.0
+2023-09-19,08:24PM,"Intel shares dip as data center chip recovery lags, company eyes AI laptop processors",2023-09-19 20:24:00,0.15,0.719,0.132,-0.0772
+2023-09-19,07:32PM,Unveiling Intel (INTC)'s Value: Is It Really Priced Right? A Comprehensive Guide,2023-09-19 19:32:00,0.0,0.659,0.341,0.5667
+2023-09-19,05:58PM,Intel Stock Slips as CFO Warns of Excess Data Center Chip Inventories,2023-09-19 17:58:00,0.113,0.887,0.0,-0.1027
+2023-09-19,05:01PM,Intel Shares Slip as CFO Warns of Excess Data Center Chip Inventories,2023-09-19 17:01:00,0.103,0.735,0.162,0.2023
+2023-09-19,05:00PM,Intel's stock sees drop despite positive product announcements at Innovation Conference,2023-09-19 17:00:00,0.322,0.512,0.166,-0.3451
+2023-09-19,04:31PM,Why Intel Plunged at the End of the Day Today,2023-09-19 16:31:00,0.0,1.0,0.0,0.0
+2023-09-19,02:15PM,UPDATE 1-Intel pitches the 'AI PC' at software developer event,2023-09-19 14:15:00,0.0,1.0,0.0,0.0
+2023-09-19,01:58PM,Synopsys (SNPS) Unveils IP Compatible With Intel's PCIe 6.0,2023-09-19 13:58:00,0.0,1.0,0.0,0.0
+2023-09-19,12:55PM,"Intel's AI advancements fuel investor confidence, stock price target rises",2023-09-19 12:55:00,0.0,0.732,0.268,0.5106
+2023-09-19,12:52PM,Intel Says Every PC Will Soon Be Capable of Running AI Applications,2023-09-19 12:52:00,0.0,0.809,0.191,0.3818
+2023-09-19,11:39AM,Intel pitches the 'AI PC' at software developer event,2023-09-19 11:39:00,0.0,1.0,0.0,0.0
+2023-09-19,11:35AM,"Intel says newest laptop chips, software will handle generative AI",2023-09-19 11:35:00,0.0,1.0,0.0,0.0
+2023-09-19,11:35AM,Intel Innovation 2023: Empowering Developers to Bring AI Everywhere,2023-09-19 11:35:00,0.0,0.755,0.245,0.3818
+2023-09-19,10:28AM,"Pay Attention to Intel in the AI Race, Analyst Says",2023-09-19 10:28:00,0.135,0.865,0.0,-0.1027
+2023-09-19,10:00AM,AI startup SambaNova launches new chip designed for higher quality AI,2023-09-19 10:00:00,0.0,1.0,0.0,0.0
+2023-09-19,09:55AM,US lawmaker to urge chip industry group to reduce China investments -source,2023-09-19 09:55:00,0.0,1.0,0.0,0.0
+2023-09-19,09:12AM,"US STOCKS-Wall St set to open subdued ahead of Fed policy meet, Instacart debut",2023-09-19 09:12:00,0.0,1.0,0.0,0.0
+2023-09-19,07:43AM,"US STOCKS-Futures edge up as investors await Fed policy meet, Instacart debut",2023-09-19 07:43:00,0.0,0.887,0.113,0.1027
+2023-09-19,06:52AM,12 Best Places to Retire in Costa Rica,2023-09-19 06:52:00,0.0,0.625,0.375,0.6369
+2023-09-19,04:00AM,"Potential shakeup in Dow Jones as Walgreens, Verizon, and Intel face removal",2023-09-19 04:00:00,0.127,0.873,0.0,-0.1531
+2023-09-19,01:37AM,Germanys Saxony to Send Interns to TSMC to Foster Chip Talent,2023-09-19 01:37:00,0.0,0.781,0.219,0.4215
+2023-09-19,12:53AM,"Vietnam PM courts U.S. companies, seeks investment in chip sector",2023-09-19 00:53:00,0.0,1.0,0.0,0.0
+2023-09-18,05:24PM,Semiconductor Market Share By Company: Top 12,2023-09-18 17:24:00,0.0,0.556,0.444,0.4588
+2023-09-18,04:43PM,Semiconductor R&D Spending By Country: Top 12,2023-09-18 16:43:00,0.0,0.769,0.231,0.2023
+2023-09-18,02:29PM,Arm Falls After Bernstein Downplays Companys AI Prospects,2023-09-18 14:29:00,0.0,0.761,0.239,0.296
+2023-09-18,09:00AM,Intel Unveils Industry-Leading Glass Substrates to Meet Demand for More Powerful Compute,2023-09-18 09:00:00,0.103,0.685,0.212,0.3804
+2023-09-18,08:00AM,Intel Sees Glass as a Vital Material in the Race to Power AI,2023-09-18 08:00:00,0.0,0.833,0.167,0.296
+2023-09-18,06:00AM,5 Reasons I Wouldn't Touch Arm Holdings Stock With a 10-Foot Pole,2023-09-18 06:00:00,0.0,1.0,0.0,0.0
+2023-09-17,10:00AM,Maybe Hold Off on Getting Rid of the DEI Leader,2023-09-17 10:00:00,0.0,1.0,0.0,0.0
+2023-09-16,06:40AM,3 Reasons to Stay Far Away From Arm Holdings Stock,2023-09-16 06:40:00,0.0,1.0,0.0,0.0
+2023-09-15,02:44PM,"Why Intel, Broadcom, and Applied Materials Plunged Today",2023-09-15 14:44:00,0.0,1.0,0.0,0.0
+2023-09-15,11:24AM,Nvidia Cash Geyser Can Cover Buybacks and Vital R&D,2023-09-15 11:24:00,0.0,0.784,0.216,0.296
+2023-09-14,12:33PM,"Buy Intel Stock, Analyst Says. It Is Well Positioned for AI.",2023-09-14 12:33:00,0.0,0.826,0.174,0.2732
+2023-09-14,12:00PM,Intel Celebrates AI Accessibility and Enables the Next Generation of Innovators,2023-09-14 12:00:00,0.0,0.73,0.27,0.5719
+2023-09-14,09:30AM,This Is the Most Essential Semiconductor Stock (and It's not TSMC),2023-09-14 09:30:00,0.0,1.0,0.0,0.0
+2023-09-14,08:00AM,AMD vs. Intel -- the Battle for Data Center CPU Leadership,2023-09-14 08:00:00,0.206,0.794,0.0,-0.3818
+2023-09-14,05:50AM,These 3 Companies Rank Highest on Customer Loyalty: Are Their Stocks No-Brainer Picks to Buy and Hold?,2023-09-14 05:50:00,0.0,0.811,0.189,0.5423
+2023-09-13,06:06PM,This $50 Billion Artificial Intelligence (AI) IPO Is Generating Massive Interest. There's Also a Huge Red Flag,2023-09-13 18:06:00,0.0,0.607,0.393,0.8126
+2023-09-13,09:42AM,Intel Rides Made-in-America Wave to Big Stock Gain,2023-09-13 09:42:00,0.0,0.673,0.327,0.5267
+2023-09-13,09:17AM,3 Things About Nvidia That Smart Investors Know,2023-09-13 09:17:00,0.0,0.69,0.31,0.4019
+2023-09-13,04:15AM,Best Stocks to Buy: Intel Stock vs. Salesforce Stock,2023-09-13 04:15:00,0.0,0.656,0.344,0.6369
