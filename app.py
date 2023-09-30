@@ -36,6 +36,56 @@ st.set_page_config(page_title="MarketMoodMeter", page_icon="random", layout="wid
 
 # # Call the function to set the background image
 # add_bg_from_local('bg2.PNG')
+
+
+def analyze_summary(business_days):
+    business_days_stats = business_days
+    count = business_days_stats.loc['count', 'sentiment_score']
+    mean = business_days_stats.loc['mean', 'sentiment_score']
+    std = business_days_stats.loc['std', 'sentiment_score']
+    min_score = business_days_stats.loc['min', 'sentiment_score']
+    max_score = business_days_stats.loc['max', 'sentiment_score']
+    median = business_days_stats.loc['50%', 'sentiment_score']
+
+    st.subheader('Summary Statistics')
+    st.write(f"Number of Business Days: {count}")
+    st.write(f"Mean Sentiment Score: {mean}")
+    st.write(f"Standard Deviation of Sentiment Scores: {std}")
+    st.write(f"Minimum Sentiment Score: {min_score}")
+    st.write(f"Maximum Sentiment Score: {max_score}")
+    st.write(f"Median Sentiment Score: {median}")
+
+    # Box Plot
+    st.write('Box Plot of Sentiment Scores')
+    fig_box = px.box(business_days, y='sentiment_score')
+    st.plotly_chart(fig_box)
+
+    # Distribution Plot
+    st.write('Distribution Plot of Sentiment Scores')
+    fig_dist = px.histogram(business_days, x='sentiment_score', nbins=10)
+    st.plotly_chart(fig_dist)
+
+    # Summary and Suggestions
+    st.write('Summary and Suggestions')
+    if mean > 0:
+        st.write("The mean sentiment score suggests an overall positive sentiment.")
+    else:
+        st.write("The mean sentiment score suggests an overall negative sentiment.")
+
+    if std > 0.5:
+        st.write("The high standard deviation indicates significant variability in sentiment, which may signal market volatility.")
+    else:
+        st.write("The low standard deviation suggests relatively stable sentiment.")
+
+    if median > 0.5:
+        st.write("The median sentiment score is relatively high, indicating a generally positive sentiment trend.")
+    else:
+        st.write("The median sentiment score is relatively low, indicating a generally negative sentiment trend.")
+
+    st.write("Further analysis and context are needed to make specific stock market decisions.")
+
+
+
 st.header("MarketMoodMeter :dollar:")
 ticker_symbols = [
     "AAPL", "MSFT", "AMZN", "GOOGL", "FB", "TSLA", "BRK.B", "JNJ", "JPM", "V",
@@ -55,18 +105,20 @@ if ticker:
     st.info(f'{ticker} means {company_intro}')
     parsed_and_scored_news, most_negative_day, lowest_avg_sentiment, most_positive_day, highest_avg_sentiment, most_negative_week, \
         most_positive_week, lowest_avg_sentimentw, highest_avg_sentimentw = score_news(parse_news_df)
-    # Call the function and get the results
     business_days_stats, working_days_stats, holidays_stats, correlation_matrix = calculate_statistics(parsed_and_scored_news)
     st.success("Statistics")
     col1, col2 = st.columns(2)
     with col1:
         st.header(":blue[Business Days Statistics:]")
         st.write(business_days_stats)
+        analyze_summary(business_days_stats)
         st.header(":blue[Holidays Statistics:]")
         st.write(holidays_stats)
+        analyze_summary(holidays_stats)
     with col2:
         st.header(":blue[Working Days Statistics:]")
         st.write(working_days_stats)
+        analyze_summary(working_days_stats)
         st.header(":blue[Correlation Matrix:]")
         st.write(correlation_matrix)
     st.success(f"Hourly and Daily Sentiment of {ticker} Stock")
@@ -90,7 +142,6 @@ if ticker:
         time.sleep(5)
 
     st.balloons()
-    # Display the results
     col3, col4 = st.columns(2)
     with col3:
         st.header("Day of the Week Analysis")
@@ -105,10 +156,10 @@ if ticker:
             f"The week with the most positive sentiment is Week {most_positive_week} with an average score of {highest_avg_sentimentw:.4f}")
     st.subheader(":blue[Comparison of Stocks]")
 
-    op=st.button('Compare')
+    op=st.button('Compare',type='primary')
     if op:
-        all_df=compare(ticker)
-        fig=create_subplot_for_dataframes(all_df)
+        all_df,titles=compare(ticker)
+        fig=create_subplot_for_dataframes(all_df,titles)
         st.spinner('In Progress...')
         st.plotly_chart(fig)
     st.success(f"Hourly and Daily Sentiment of {ticker} Stock")
