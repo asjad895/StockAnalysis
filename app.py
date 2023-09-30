@@ -244,8 +244,10 @@ def plot_hourly_sentiment(parsed_and_scored_news, ticker):
 
 # Define a function for plotting daily sentiment
 def plot_daily_sentiment(parsed_and_scored_news, ticker):
-    mean_scores_d = parsed_and_scored_news.resample('D').mean()
     print("daily")
+    df = parsed_and_scored_news[['sentiment_score']].copy()
+    print(df.head())
+    mean_scores_d = df.resample('H').mean()
     fig1 = px.bar(mean_scores_d, x=mean_scores_d.index, y='sentiment_score', title=f'{ticker} Daily Sentiment Scores',width=100
                   ,height=100)
     # Create a column for color based on sentiment_score
@@ -256,6 +258,25 @@ def plot_daily_sentiment(parsed_and_scored_news, ticker):
                    title=f'{ticker} Daily Sentiment Scores (Green: Positive, Red: Negative)')
     print("daily2")
     return fig1, fig2
+import pandas as pd
+import numpy as np
+
+def calculate_statistics(parse_news_df):
+    # Separate the DataFrame into business days, working days, and holidays
+    business_days = parse_news_df[parse_news_df['day_of_week'].isin(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'])]
+    working_days = parse_news_df[parse_news_df['day_of_week'].isin(['Monday', 'Tuesday', 'Wednesday', 'Thursday'])]
+    holidays = parse_news_df[~parse_news_df['day_of_week'].isin(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'])]
+
+    # Calculate statistics for each group
+    business_days_stats = business_days.describe()
+    working_days_stats = working_days.describe()
+    holidays_stats = holidays.describe()
+
+    # Create a correlation matrix
+    correlation_matrix = parse_news_df[['neg', 'neu', 'pos', 'sentiment_score']].corr()
+
+    return business_days_stats, working_days_stats, holidays_stats, correlation_matrix
+
 
 
 
@@ -263,55 +284,65 @@ st.header("Stock News Sentiment Analyzer :dollar:")
 ticker = st.text_input('Enter Stock Ticker', '').upper()
 
 if ticker:
-    st.info(company_intro)
-    try:
-        st.success(f"Hourly and Daily Sentiment of {ticker} Stock")
-        parse_news_df ,company_intro= get_news_df(ticker)
-        print("aage aa")
-        parsed_and_scored_news,most_negative_day,lowest_avg_sentiment,most_positive_day,highest_avg_sentiment,most_negative_week,\
-           most_positive_week,lowest_avg_sentimentw,highest_avg_sentimentw= score_news(parse_news_df)
-        print("aur aage aa")
-        fig_hourly,fig_hourly_l = plot_hourly_sentiment(parsed_and_scored_news, ticker)
-        fig_daily,fig_daily_l = plot_daily_sentiment(parsed_and_scored_news, ticker)
+    parse_news_df, company_intro = get_news_df(ticker)
+    st.info(f'{ticker} means {company_intro}')
+    parsed_and_scored_news, most_negative_day, lowest_avg_sentiment, most_positive_day, highest_avg_sentiment, most_negative_week, \
+        most_positive_week, lowest_avg_sentimentw, highest_avg_sentimentw = score_news(parse_news_df)
+    # Call the function and get the results
+    business_days_stats, working_days_stats, holidays_stats, correlation_matrix = calculate_statistics(parsed_and_scored_news)   
+    st.header(":blue{Business Days Statistics]:")
+    st.write(business_days_stats)
 
-        if st.checkbox("Hourly Analysis :bar_chart:"):
-            st.balloons()
-            st.plotly_chart(fig_hourly)
-            st.plotly_chart(fig_hourly_l)
-            st.balloons()
 
-        if st.checkbox("Daily Analysis :bar_chart:"):
-            st.plotly_chart(fig_daily)
-            st.plotly_chart(fig_daily_l)
-            st.balloons()
+    st.header("\nWorking Days Statistics:")
+    st.write(working_days_stats)
 
-        with st.spinner("Analyzing..."):
-            time.sleep(5)
+    st.header("\nHolidays Statistics:")
+    st.write(holidays_stats)
 
+    st.header("\nCorrelation Matrix:")
+    st.write(correlation_matrix)
+    st.success(f"Hourly and Daily Sentiment of {ticker} Stock")
+    print("aage aa")
+    print("aur aage aa")
+    fig_hourly, fig_hourly_l = plot_hourly_sentiment(parsed_and_scored_news, ticker)
+    fig_daily, fig_daily_l = plot_daily_sentiment(parsed_and_scored_news, ticker)
+
+    if st.checkbox("Hourly Analysis :bar_chart:"):
         st.balloons()
-        # Display the results
-        st.header("Day of the Week Analysis")
-        st.write(
-            f"The day of the week with the most negative sentiment is {most_negative_day} with an average score of {lowest_avg_sentiment:.4f}")
-        st.write(
-            f"The day of the week with the most positive sentiment is {most_positive_day} with an average score of {highest_avg_sentiment:.4f}")
+        st.plotly_chart(fig_hourly)
+        st.plotly_chart(fig_hourly_l)
+        st.balloons()
 
-        st.header("Week Analysis")
-        st.write(
-            f"The week with the most negative sentiment is Week {most_negative_week} with an average score of {lowest_avg_sentimentw:.4f}")
-        st.write(
-            f"The week with the most positive sentiment is Week {most_positive_week} with an average score of {highest_avg_sentimentw:.4f}")
+    if st.checkbox("Daily Analysis :bar_chart:"):
+        st.plotly_chart(fig_daily)
+        st.plotly_chart(fig_daily_l)
+        st.balloons()
 
-        st.success(f"Hourly and Daily Sentiment of {ticker} Stock")
-        description = f"The above chart averages the sentiment scores of {ticker} stock hourly and daily. " \
-                      "The table below gives each of the most recent headlines of the stock and the negative, " \
-                      "neutral, positive, and an aggregated sentiment score. " \
-                      "The news headlines are obtained from the FinViz website. " \
-                      "Sentiments are given by the nltk.sentiment.vader Python library."
-        st.success(description)
-        st.table(parsed_and_scored_news)
-    except Exception as e:
-        st.warning("An error occurred. Please enter a correct stock ticker, e.g., 'AAPL' above and hit Enter.")
-        st.info("If you want to explore a ticker, click the link below.")
+    with st.spinner("Analyzing..."):
+        time.sleep(5)
+
+    st.balloons()
+    # Display the results
+    st.header("Day of the Week Analysis")
+    st.write(
+        f"The day of the week with the most negative sentiment is {most_negative_day} with an average score of {lowest_avg_sentiment:.4f}")
+    st.write(
+        f"The day of the week with the most positive sentiment is {most_positive_day} with an average score of {highest_avg_sentiment:.4f}")
+
+    st.header("Week Analysis")
+    st.write(
+        f"The week with the most negative sentiment is Week {most_negative_week} with an average score of {lowest_avg_sentimentw:.4f}")
+    st.write(
+        f"The week with the most positive sentiment is Week {most_positive_week} with an average score of {highest_avg_sentimentw:.4f}")
+
+    st.success(f"Hourly and Daily Sentiment of {ticker} Stock")
+    description = f"The above chart averages the sentiment scores of {ticker} stock hourly and daily. " \
+                  "The table below gives each of the most recent headlines of the stock and the negative, " \
+                  "neutral, positive, and an aggregated sentiment score. " \
+                  "The news headlines are obtained from the FinViz website. " \
+                  "Sentiments are given by the nltk.sentiment.vader Python library."
+    st.success(description)
+    st.table(parsed_and_scored_news)
 else:
     st.info(company_intro)
