@@ -1,4 +1,6 @@
 headline,neg,neu,pos,sentiment_score,day_of_week,week
+AP Top Financial News at 7:44 a.m. EDT,0.0,0.795,0.205,0.2023,Sunday,41
+AP Top Extended Financial Headlines at 7:44 a.m. EDT,0.0,0.816,0.184,0.2023,Sunday,41
 Meta's AI gambits; Amazon's  antitrust fight with FTC: Weekly tech roundup,0.206,0.794,0.0,-0.3818,Saturday,40
 Top 5 Augmented Reality (AR) Stocks Among Hedge Funds,0.0,0.795,0.205,0.2023,Saturday,40
 Apple identifies issues causing overheating in the iPhone 15,0.0,1.0,0.0,0.0,Saturday,40
@@ -97,5 +99,3 @@ Apple Remains Silent On Strategy As China's Cyberspace Watchdog Tightens Reins O
 Apple reveals groundbreaking new changes to AirPods Pro,0.0,1.0,0.0,0.0,Tuesday,40
 Why Would You Want to Own an Apple That's Going Bad?,0.254,0.652,0.094,-0.4939,Tuesday,40
 "Google Trial Spills Details on Search Engines Deals With Apple, Samsung",0.0,1.0,0.0,0.0,Tuesday,40
-Warren Buffett Says Apple Is Better Than Any Businesses Berkshire Owns  Unmatched Brand Loyalty Proven As Consumers Would Give Up A Second Car For An iPhone,0.044,0.741,0.215,0.7269,Tuesday,40
-Apple exec defends the decision to make Google its default search engine on iPhones and Macs,0.0,1.0,0.0,0.0,Tuesday,40
