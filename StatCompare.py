@@ -108,6 +108,7 @@ def get_news_df(tickers):
     parsed_news_df.to_csv(csv_file_path, index=False)
     print(f"DataFrame saved to {csv_file_path}")
     print("yes")
+    print("_____________________________________________________")
 
     return parsed_news_df,extracted_text
 
@@ -122,6 +123,7 @@ def calculate_statistics(parse_news_df):
     holidays_stats = holidays.describe()
 
     correlation_matrix = parse_news_df[['neg', 'neu', 'pos', 'sentiment_score']].corr()
+    print("_____________________________________________________")
 
     return business_days_stats, working_days_stats, holidays_stats, correlation_matrix
 
@@ -153,7 +155,7 @@ def score_news(parsed_news_df):
     parsed_and_scored_news = parsed_and_scored_news.set_index('datetime')
     print("sent2")
     print(parsed_and_scored_news.columns)
-    parsed_and_scored_news = parsed_and_scored_news.drop(['date', 'time'], axis=1)
+    parsed_and_scored_news = parsed_and_scored_news.drop(['time'], axis=1)
     print("sent3")
     parsed_and_scored_news = parsed_and_scored_news.rename(columns={"compound": "sentiment_score"})
     day_of_week_avg_sentiment = parsed_and_scored_news.groupby('day_of_week')['sentiment_score'].mean()
@@ -182,6 +184,7 @@ def score_news(parsed_news_df):
     csv_file_path = os.path.join("pages/", "Parsed_and_Scored.csv")
     parsed_and_scored_news.to_csv(csv_file_path, index=False)
     print(f"DataFrame saved to {csv_file_path}")
+    print("_____________________________________________________")
     return parsed_and_scored_news,most_negative_day,lowest_avg_sentiment,most_positive_day,highest_avg_sentiment,most_negative_week,\
            most_positive_week,lowest_avg_sentimentw,highest_avg_sentimentw
 
@@ -246,4 +249,5 @@ def compare(ticker):
         if j==10:
             break
         j+=1  
+    print("_____________________________________________________")
     return dfs,random_values

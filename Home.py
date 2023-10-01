@@ -18,6 +18,7 @@ import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 from StatCompare import preprocess_datetime,convert_to_numeric_date,get_news_df,calculate_statistics,score_news,compare
 from Plot import plot_daily_sentiment,plot_hourly_sentiment,create_subplot_for_dataframes
+from Stock import fetch_merge_stock_sentiment_data
 # Streamlit app
 st.set_page_config(page_title="MarketMoodMeter", page_icon="random", layout="wide", initial_sidebar_state="expanded")
 # Define a function for adding a background image
@@ -106,6 +107,7 @@ if ticker:
     parsed_and_scored_news, most_negative_day, lowest_avg_sentiment, most_positive_day, highest_avg_sentiment, most_negative_week, \
         most_positive_week, lowest_avg_sentimentw, highest_avg_sentimentw = score_news(parse_news_df)
     business_days_stats, working_days_stats, holidays_stats, correlation_matrix = calculate_statistics(parsed_and_scored_news)
+    fetch_merge_stock_sentiment_data(ticker=ticker)
     st.success("Statistics")
     col1, col2 = st.columns(2)
     with col1:
