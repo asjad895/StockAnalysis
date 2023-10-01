@@ -2,6 +2,7 @@ import time
 import base64
 import json
 import requests
+import string
 import numpy as np
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup, NavigableString
@@ -9,6 +10,7 @@ import pandas as pd
 import plotly.express as px
 from PIL import Image
 import nltk
+import os
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -177,13 +179,39 @@ def score_news(parsed_news_df):
     print(f"The week with the most negative sentiment is Week {most_negative_week} with an average score of {lowest_avg_sentimentw:.4f}")
     print(f"The week with the most positive sentiment is Week {most_positive_week} with an average score of {highest_avg_sentimentw:.4f}")
     print(week_avg_sentiment)
+    csv_file_path = os.path.join("pages/", "Parsed_and_Scored.csv")
+    parsed_and_scored_news.to_csv(csv_file_path, index=False)
+    print(f"DataFrame saved to {csv_file_path}")
     return parsed_and_scored_news,most_negative_day,lowest_avg_sentiment,most_positive_day,highest_avg_sentiment,most_negative_week,\
            most_positive_week,lowest_avg_sentimentw,highest_avg_sentimentw
 
 
-ticker_symbols2 = [
-    "AAPL", "MSFT", "AMZN", "GOOGL", "META", "TSLA", "JNJ", "JPM", "V",
-    "WMT", "PG", "KO", "NFLX", "DIS", "XOM", "INTC", "GE", "PFE", "BABA"]
+ticker_to_company = {
+    "AAPL": "Apple Inc.",
+    "MSFT": "Microsoft Corporation",
+    "AMZN": "Amazon.com, Inc.",
+    "GOOGL": "Alphabet Inc. - Class A",
+    "META": "Meta Platforms, Inc.",
+    "TSLA": "Tesla, Inc.",
+    "JNJ": "Johnson & Johnson",
+    "JPM": "JPMorgan Chase & Co.",
+    "V": "Visa Inc.",
+    "WMT": "Walmart Inc.",
+    "PG": "Procter & Gamble Co.",
+    "KO": "The Coca-Cola Company",
+    "NFLX": "Netflix, Inc.",
+    "DIS": "The Walt Disney Company",
+    "XOM": "Exxon Mobil Corporation",
+    "INTC": "Intel Corporation",
+    "GE": "General Electric Company",
+    "PFE": "Pfizer Inc.",
+    "BABA": "Alibaba Group Holding Limited"
+}
+
+# Example usage:
+# To get the company name for the ticker "AAPL":
+# company_name = ticker_to_company["AAPL"]
+
 def compare(ticker):
     """_summary_
 
@@ -193,15 +221,15 @@ def compare(ticker):
     Returns:
         _type_: _description_
     """
-    random_tickers = random.sample(ticker_symbols2, 9)
+    ticker_items = list(ticker_to_company.items())
+    random_items = random.sample(ticker_items, 9)
+    random_keys = [item[0] for item in random_items]
+    random_values = [string(item) for item in random_items]
     dfs=[]
     j=0
-    for i in random_tickers:
-        j+=1
+    for i in random_keys:
         if i==ticker:
             j+=2
-        if j==10:
-            break
         df=f"{i}"
         df,a=get_news_df(i)
         vader = SentimentIntensityAnalyzer()
@@ -217,5 +245,9 @@ def compare(ticker):
         # df.to_csv(csv_file_path, index=False)
         # print(f"DataFrame saved to {csv_file_path}")
         print("_______________________________________________________________________________________\n",i)
+        if j==10:
+            break
+        j+=1
+        
 
-    return dfs,random_tickers
+    return dfs,random_values

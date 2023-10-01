@@ -62,7 +62,7 @@ def analyze_summary(business_days):
 
     # Distribution Plot
     st.write('Distribution Plot of Sentiment Scores')
-    fig_dist = px.histogram(business_days, x='sentiment_score', nbins=10)
+    fig_dist = px.density_heatmap(business_days, x='sentiment_score')
     st.plotly_chart(fig_dist)
 
     # Summary and Suggestions
@@ -110,15 +110,19 @@ if ticker:
     col1, col2 = st.columns(2)
     with col1:
         st.header(":blue[Business Days Statistics:]")
+        st.write("'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'")
         st.write(business_days_stats)
         analyze_summary(business_days_stats)
         st.header(":blue[Holidays Statistics:]")
+        st.write("Saturday,Sunday")
         st.write(holidays_stats)
         analyze_summary(holidays_stats)
     with col2:
         st.header(":blue[Working Days Statistics:]")
+        st.write("'Monday', 'Tuesday', 'Wednesday', 'Thursday'")
         st.write(working_days_stats)
         analyze_summary(working_days_stats)
+        
         st.header(":blue[Correlation Matrix:]")
         st.write(correlation_matrix)
     st.success(f"Hourly and Daily Sentiment of {ticker} Stock")
@@ -159,15 +163,18 @@ if ticker:
     op=st.button('Compare',type='primary')
     if op:
         all_df,titles=compare(ticker)
+        st.subheader("Compare sentiment scores for different tickers or companies, enabling you to spot relative sentiment trends and make more informed investment choices")
         fig=create_subplot_for_dataframes(all_df,titles)
-        st.spinner('In Progress...')
-        st.plotly_chart(fig)
-    st.success(f"Hourly and Daily Sentiment of {ticker} Stock")
+        with st.spinner('In Progress...'):
+            time.sleep(10)
+            st.plotly_chart(fig)
+    st.success(f"Sentiment Score of {ticker} Stock Article Dataframe that we got in realtime.it is subject to chnage every time you refresh tab")
     description = f"The above chart averages the sentiment scores of {ticker} stock hourly and daily. " \
                   "The table below gives each of the most recent headlines of the stock and the negative, " \
-                  "neutral, positive, and an aggregated sentiment score. " \
-                  "The news headlines are obtained from the FinViz website. " \
-                  "Sentiments are given by the nltk.sentiment.vader Python library."
+                  "neutral, positive, and an aggregated sentiment score. " 
     st.success(description)
-    st.table(parsed_and_scored_news)
+    st.write(parsed_and_scored_news)
+    
 
+if __name__ == '__main__':
+    st.set_option('deprecation.showfileUploaderEncoding', False)
