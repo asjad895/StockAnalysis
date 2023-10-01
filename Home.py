@@ -61,7 +61,7 @@ def analyze_summary(business_days):
     st.plotly_chart(fig_box)
 
     # Distribution Plot
-    st.write('Distribution Plot of Sentiment Scores')
+    st.write('Distribution Plot of Sentiment Scores(Heatmap)')
     fig_dist = px.density_heatmap(business_days, x='sentiment_score')
     st.plotly_chart(fig_dist)
 
