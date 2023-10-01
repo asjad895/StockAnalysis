@@ -17,6 +17,7 @@ df=df.rename(columns={
 # df['Date']=pd.to_datetime(df['Date'])
 df=df.set_index('Date')
 df.index=pd.to_datetime(df.index)
+st.set_page_config(page_title="MarketMoodMeter-StockAnalytics", page_icon="random", layout="wide", initial_sidebar_state="expanded")
 st.title("--Analyze how market influencing Stock prices--")
 st.dataframe(df)
 

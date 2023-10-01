@@ -23,6 +23,7 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 from StatCompare import preprocess_datetime,convert_to_numeric_date,get_news_df,calculate_statistics,score_news,compare
 from Plot import plot_daily_sentiment,plot_hourly_sentiment,create_subplot_for_dataframes
 df=pd.read_csv('pages/Parsed_and_Scored.csv')
+st.set_page_config(page_title="MarketMoodMeter-EventAnalysis", page_icon="random", layout="wide", initial_sidebar_state="expanded")
 st.warning("Please load Home page fully so that data can be fetch in realtime.Thankyou")
 st.subheader('Event Analysis Results')
 extreme_events = df[(df['sentiment_score'] > 0.5) | (df['sentiment_score'] < -0.5)]
