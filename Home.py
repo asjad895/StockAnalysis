@@ -177,6 +177,3 @@ if ticker:
     st.success(description)
     st.write(parsed_and_scored_news)
     
-
-if __name__ == '__main__':
-    st.set_option('deprecation.showfileUploaderEncoding', False)
