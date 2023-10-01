@@ -214,10 +214,8 @@ ticker_to_company = {
 
 def compare(ticker):
     """_summary_
-
     Args:
         parsed_news_df (_type_): _description_
-
     Returns:
         _type_: _description_
     """
@@ -247,7 +245,5 @@ def compare(ticker):
         print("_______________________________________________________________________________________\n",i)
         if j==10:
             break
-        j+=1
-        
-
+        j+=1  
     return dfs,random_values

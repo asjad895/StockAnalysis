@@ -3,6 +3,8 @@ import time
 import base64
 import json
 import requests
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
 import numpy as np
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup, NavigableString
@@ -35,4 +37,10 @@ if selected_event:
     st.write(f'Sentiment Score: {sentiment}')
     st.write(f'Day of the Week: {event_row["day_of_week"]}')
     st.write(f'Week: {event_row["week"]}')
-    
+    event_headline = event_row['headline']
+    wordcloud = WordCloud(width=800, height=400, background_color='white').generate(event_headline)
+    st.subheader('Word Cloud Analysis for Selected Event:')
+    plt.figure(figsize=(10, 5))
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis("off")
+    st.pyplot(plt)
