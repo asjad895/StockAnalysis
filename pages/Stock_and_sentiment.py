@@ -40,17 +40,28 @@ def analyze_data(merged_data):
         
 def stockSent_chart(merged_data):
     st.subheader("Visualize the trend of sentimnet score with stock price")
-    traces=[]
     fig = go.Figure()
     for column in merged_data.columns:
-        trace = go.Scatter(x=df.index, y=df[column], mode='lines',name=column)
-        traces.append(trace)
-    layout = go.Layout(
-        title='Comparative charts with sentiments score',
-        width=1200,
-        height=900)
-    fig = go.Figure(data=traces, layout=layout)
-    st.plotly_chart(fig)     
+        if column != 'Date':
+            if column != 'Sentiment_Score':
+                fig.add_trace(go.Scatter(x=merged_data.index, y=merged_data[column], mode='lines', name=column))
+            else:
+                fig.add_trace(go.Scatter(x=merged_data.index, y=merged_data[column], mode='lines', name=column, yaxis='y2'))
+    fig.update_layout(
+        title="Compare all things in once",
+        xaxis_title="Date",
+        yaxis_title="Value (Primary Axis)",
+        yaxis2=dict(
+            title="Sentiment Score (Secondary Axis)",
+            overlaying='y',
+            side='right'
+        ),
+        legend=dict(x=0, y=1),
+        width=1200,height=600
+    )
+
+    # Display the chart
+    st.plotly_chart(fig)    
 analyze_data(df)
 
 stockSent_chart(df)
