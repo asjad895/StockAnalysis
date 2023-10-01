@@ -40,7 +40,8 @@ if selected_event:
     event_headline = event_row['headline']
     wordcloud = WordCloud(width=800, height=400, background_color='white').generate(event_headline)
     st.subheader('Word Cloud Analysis for Selected Event:')
-    plt.figure(figsize=(10, 5))
+    st.write(" visualize recurring themes and topics associated with positive or negative sentiment from the selected event's headline.")
+    plt.figure(figsize=(5, 5))
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
     st.pyplot(plt)

@@ -222,7 +222,7 @@ def compare(ticker):
     ticker_items = list(ticker_to_company.items())
     random_items = random.sample(ticker_items, 9)
     random_keys = [item[0] for item in random_items]
-    random_values = [string(item) for item in random_items]
+    random_values = [item[1] for item in random_items]
     dfs=[]
     j=0
     for i in random_keys:

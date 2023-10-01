@@ -77,7 +77,7 @@ def create_subplot_for_dataframes(dataframes,titles):
         traces.append(trace)
     layout = go.Layout(
         title='Sentiment Scores for 10 Stocks of Daily Article',
-        width=1100, 
+        width=1200, 
         height=900)
     fig = go.Figure(data=traces, layout=layout)
     
