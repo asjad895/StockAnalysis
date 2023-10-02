@@ -177,7 +177,7 @@ if ticker:
     st.success(description)
     st.write(parsed_and_scored_news)
     
-st.info(f"Disclaimer: this project/article is not intended to provide financial, trading, and investment advice."\
-        "No warranties are made regarding the accuracy of the models. Audiences should conduct their due diligence"\
-            "before making any investment decisions using the methods or code presented in this article.")
+st.info(f"Disclaimer: this project/article is not intended to provide financial, trading, and investment advice." \
+        "No warranties are made regarding the accuracy of the models. Audiences should conduct their due diligence" \
+        "before making any investment decisions using the methods or code presented in this article.")
     
