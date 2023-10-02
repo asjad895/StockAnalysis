@@ -3,7 +3,9 @@ import numpy as np
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
+# //Data Cllection
 df=pd.read_csv('pages/Stock_sent.csv')
+# //Data cleaning
 df=df.rename(columns={
         'Open': 'Stock_Open',
         'High': 'Stock_High',

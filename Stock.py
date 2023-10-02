@@ -3,9 +3,11 @@ from datetime import datetime,timedelta
 import os
 import pandas as pd
 tickers = ["AAPL", "MSFT", "AMZN", "GOOGL", "META", "TSLA", "JNJ", "JPM", "V", "WMT", "PG", "KO", "NFLX", "DIS", "XOM", "INTC", "GE", "PFE", "BABA"]
+# //data Preprocessing
 def fetch_merge_stock_sentiment_data(ticker):
     end_date = datetime.now()
     start_date = end_date - timedelta(days=30)
+    # //Stock data
     stock_data = yf.download(ticker, start=start_date, end=end_date, progress=False)
     csv_file_path = os.path.join("pages/", "Parsed_and_Scored.csv")
     sentiment_data = pd.read_csv(csv_file_path)
@@ -30,6 +32,9 @@ def fetch_merge_stock_sentiment_data(ticker):
 
     print(f"Data for {ticker} saved to {csv_file_path}")
     print("_____________________________________________________")
+
+
+
 
 ticker = "AAPL"
 fetch_merge_stock_sentiment_data(ticker)
