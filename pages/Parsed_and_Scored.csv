@@ -1,7 +1,21 @@
 date,headline,neg,neu,pos,sentiment_score,day_of_week,week
+2023-10-02,"These Stocks Are Moving the Most Today: Tesla, Rivian, AMC, Sphere Entertainment, Apple, and More",0.0,0.833,0.167,0.4215,Monday,41
+2023-10-02,"Apple Is a Magnificent Stock, But There Are 2 Big Reasons Investors Could Regret Buying It Right Now",0.184,0.695,0.122,-0.3071,Monday,41
+2023-10-02,Qualcomm (QCOM) Remains in Spotlight Throughout September,0.0,1.0,0.0,0.0,Monday,41
+2023-10-02,5 Things to Know Before Markets Open,0.0,1.0,0.0,0.0,Monday,41
+2023-10-02,46% of Warren Buffett's Portfolio Is Invested in This Stock. Does That Mean You Should Buy Now?,0.0,1.0,0.0,0.0,Monday,41
+2023-10-02,Wall Street Thinks This Top Stock Will Join the $2 Trillion Club Next Year. Time to Buy?,0.0,0.789,0.211,0.4588,Monday,41
+2023-10-02,Apple and 4 More Quality Stocks to Buy After the Selloff,0.0,1.0,0.0,0.0,Monday,41
+2023-10-02,Spotify boss urges UK to enact tougher regulation of tech gatekeepers,0.0,0.855,0.145,0.1779,Monday,41
+2023-10-01,Apple iPhone 15 users complain about overheating issues as Apple prepares fix,0.185,0.815,0.0,-0.3612,Sunday,41
+2023-10-01,1 Apple Chip Supplier the Market Has Given Up On -- Time to Buy Before It Soars?,0.0,1.0,0.0,0.0,Sunday,41
+2023-10-01,A Trillion-Dollar Dividend Growth Stock to Buy and Hold Forever,0.0,0.755,0.245,0.3818,Sunday,41
+2023-10-01,What Social Responsibilities Should Companies Have? A New Approach,0.0,1.0,0.0,0.0,Sunday,41
+2023-10-01,"Shutdown Averted, McCarthy Faces Mutiny: Your Sunday US Briefing",0.14,0.86,0.0,-0.0772,Sunday,41
 2023-10-01,Top NASDAQ ETFs for Q4 2023,0.0,0.735,0.265,0.2023,Sunday,41
-2023-10-01,AP Top Financial News at 7:44 a.m. EDT,0.0,0.795,0.205,0.2023,Sunday,41
-2023-10-01,AP Top Extended Financial Headlines at 7:44 a.m. EDT,0.0,0.816,0.184,0.2023,Sunday,41
+2023-10-01,Rage-Poking and Wet Fingers: Why Some Gadgets Need More Buttons,0.0,1.0,0.0,0.0,Sunday,41
+2023-10-01,AP Top Financial News at 9:44 p.m. EDT,0.0,0.795,0.205,0.2023,Sunday,41
+2023-10-01,AP Top Extended Financial Headlines at 9:44 p.m. EDT,0.0,0.816,0.184,0.2023,Sunday,41
 2023-09-30,Meta's AI gambits; Amazon's  antitrust fight with FTC: Weekly tech roundup,0.206,0.794,0.0,-0.3818,Saturday,40
 2023-09-30,Top 5 Augmented Reality (AR) Stocks Among Hedge Funds,0.0,0.795,0.205,0.2023,Saturday,40
 2023-09-30,Apple identifies issues causing overheating in the iPhone 15,0.0,1.0,0.0,0.0,Saturday,40
@@ -85,17 +99,3 @@ date,headline,neg,neu,pos,sentiment_score,day_of_week,week
 2023-09-27,"Apple Defends Its $19B Google Search Deal, Hollywood's Writers Secure Credit For AI Training, China's Ambitious Chip Fund Faces Headwinds: Today's Top Stories",0.0,0.657,0.343,0.836,Wednesday,40
 2023-09-27,There's only one smartphone brand selling more devices in Q2 and it isn't who you might think,0.0,1.0,0.0,0.0,Wednesday,40
 2023-09-27,"Blockbuster report of OpenAIs talks with iPhone designer Jony Ive about an AI hardware device suggests he wants a front-row seat for the AI revolution, top analyst says",0.0,0.814,0.186,0.6908,Wednesday,40
-2023-09-27,Amazon and These 2 Other Tech Giants Need to Start Paying Dividends,0.0,0.855,0.145,0.1779,Wednesday,40
-2023-09-27,Tech sector could be nearing a correction,0.0,1.0,0.0,0.0,Wednesday,40
-2023-09-27,Apple exec Eddy Cue on Google search: 'There wasn't a valid alternative',0.0,1.0,0.0,0.0,Wednesday,40
-2023-09-27,Can the iPhone 15 Help Reverse Apple's Sales Decline?,0.0,0.748,0.252,0.4019,Wednesday,40
-2023-09-27,Apple Delays Newest Processor Rollout -- Is Taiwan Semi Manufacturing in Deep Trouble?,0.184,0.816,0.0,-0.4019,Wednesday,40
-2023-09-27,Apple Remains Silent On Strategy As China's Cyberspace Watchdog Tightens Reins On App Stores,0.0,1.0,0.0,0.0,Wednesday,40
-2023-09-27,"2 Remarkable Artificial Intelligence (AI) Growth Stocks With More Upside Than Apple and Microsoft to Buy Now, According to Wall Street",0.0,0.646,0.354,0.8519,Wednesday,40
-2023-09-27,"Warren Buffett Is Selling Shares of This High-Yield Dividend Stock and, Likely, Buying Shares of His Favorite Stock (No, Not Apple!)",0.0,0.701,0.299,0.7712,Wednesday,40
-2023-09-27,"UPDATE 1-China lists mobile app stores that comply with new rule, but Apple missing",0.177,0.823,0.0,-0.4215,Wednesday,40
-2023-09-26,"Ex-Apple designer Ive, OpenAI's Altman discuss AI hardware -The Information",0.0,1.0,0.0,0.0,Tuesday,40
-2023-09-26,"REFILE-Ex-Apple designer Ive, OpenAI's Altman discuss AI hardware -The Information",0.0,1.0,0.0,0.0,Tuesday,40
-2023-09-26,"Apple, Google Agreed to Defend Search Deal From Regulators",0.0,0.792,0.208,0.2732,Tuesday,40
-2023-09-26,Apple reveals groundbreaking new changes to AirPods Pro,0.0,1.0,0.0,0.0,Tuesday,40
-2023-09-26,Why Would You Want to Own an Apple That's Going Bad?,0.254,0.652,0.094,-0.4939,Tuesday,40
