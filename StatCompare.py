@@ -17,6 +17,8 @@ from streamlit_lottie import st_lottie
 from datetime import datetime
 import random
 nltk.downloader.download('vader_lexicon')
+from dotenv import load_dotenv
+load_dotenv()
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 def preprocess_datetime(datetime_str):
@@ -240,7 +242,7 @@ def compare(ticker):
         df = df.rename(columns={"compound": "sentiment_score"})
         df=df.groupby('date')['sentiment_score'].mean().reset_index()
         df.set_index('date', inplace=True)
-        print(df)
+        # print(df)
         dfs.append(df)
         # csv_file_path = f"{i}"+"Scored.csv"
         # df.to_csv(csv_file_path, index=False)
@@ -251,3 +253,56 @@ def compare(ticker):
         j+=1  
     print("_____________________________________________________")
     return dfs,random_values
+api_key = os.getenv("api_key")
+def get_sentiment_alpha_vantage(ticker,api_key,time_from,sort,limit):
+    base_url = 'https://www.alphavantage.co/query?function=NEWS_SENTIMENT'
+    params = {'apikey': api_key}
+    if ticker:
+         params['tickers'] = ticker
+    # if topics:
+    #     params['topics'] = ','.join(topics)
+    if time_from:
+        params['time_from'] = time_from
+    # if time_to:
+    #     params['time_to'] = time_to
+    if sort:
+        params['sort'] = sort
+    if limit:
+        params['limit'] = limit
+    response = requests.get(base_url, params=params)
+    if response.status_code == 200:
+        json_data = response.json()
+        data = []
+        for item in json_data.get('feed', []):
+            time_published = item.get('time_published')
+            # print(time_published)
+            title = item.get('title')
+            # summary=item.get('summary')
+            data.append([time_published, title])
+        df = pd.DataFrame(data, columns=['date', 'headline'])
+        df['date']=pd.to_datetime(df['date'],format='%Y%m%dT%H%M%S').dt.date
+        vader = SentimentIntensityAnalyzer()
+        scores = df['headline'].apply(vader.polarity_scores).tolist()
+        scores_df = pd.DataFrame(scores)
+        df = df.join(scores_df, rsuffix='_right')
+        df = df.rename(columns={"compound": "sentiment_score"})
+        df=df.groupby('date')['sentiment_score'].mean().reset_index()
+        # df.set_index('date', inplace=True)
+        csv_file_path = os.path.join("pages/", "Alpha_and_Scored.csv")
+        df.to_csv(csv_file_path,index=False)
+        print(df.head())
+        # df.to_csv('news_data.csv', index=False)
+        print("Alpha Vantage data saved to 'Alpha_and_Scored.csv'")
+        print("_____________________________________________________")
+    else:
+        print("Error:_________________________________________________in alpha vantage")
+
+ticker = 'AAPL'
+# topics = 'technology', 'earnings','financial_markets','finance','ipo','economy_fiscal','economy_monetary'
+time_from = '20230101T0000'
+sort = 'LATEST'
+limit = 1000
+
+# df=get_sentiment_alpha_vantage(ticker,api_key,time_from,sort,limit)
+    
+    

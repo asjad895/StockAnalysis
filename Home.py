@@ -14,9 +14,12 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 from datetime import datetime
 nltk.downloader.download('vader_lexicon')
+from dotenv import load_dotenv
+load_dotenv()
+import os
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
-from StatCompare import preprocess_datetime,convert_to_numeric_date,get_news_df,calculate_statistics,score_news,compare
+from StatCompare import preprocess_datetime,convert_to_numeric_date,get_news_df,calculate_statistics,score_news,compare,get_sentiment_alpha_vantage
 from Plot import plot_daily_sentiment,plot_hourly_sentiment,create_subplot_for_dataframes
 from Stock import fetch_merge_stock_sentiment_data
 # Streamlit app
@@ -38,7 +41,7 @@ st.set_page_config(page_title="MarketMoodMeter", page_icon="random", layout="wid
 # # Call the function to set the background image
 # add_bg_from_local('bg2.PNG')
 
-
+api_key = os.getenv("api_key")
 def analyze_summary(business_days):
     business_days_stats = business_days
     count = business_days_stats.loc['count', 'sentiment_score']
@@ -86,7 +89,7 @@ def analyze_summary(business_days):
     st.write("Further analysis and context are needed to make specific stock market decisions.")
 
 
-
+api_key = os.getenv("api_key")
 st.header("MarketMoodMeter :dollar:")
 ticker_symbols = [
     "AAPL", "MSFT", "AMZN", "GOOGL", "FB", "TSLA", "BRK.B", "JNJ", "JPM", "V",
@@ -107,7 +110,12 @@ if ticker:
     parsed_and_scored_news, most_negative_day, lowest_avg_sentiment, most_positive_day, highest_avg_sentiment, most_negative_week, \
         most_positive_week, lowest_avg_sentimentw, highest_avg_sentimentw = score_news(parse_news_df)
     business_days_stats, working_days_stats, holidays_stats, correlation_matrix = calculate_statistics(parsed_and_scored_news)
+    time_from = '20230101T0000'
+    sort = 'LATEST'
+    limit = 1000
+    get_sentiment_alpha_vantage(ticker,api_key,time_from,sort,limit)
     fetch_merge_stock_sentiment_data(ticker=ticker)
+    # topics = 'technology', 'earnings','financial_markets','finance','ipo','economy_fiscal','economy_monetary'
     st.success("Statistics")
     col1, col2 = st.columns(2)
     with col1:

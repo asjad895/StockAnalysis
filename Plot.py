@@ -43,6 +43,7 @@ def plot_hourly_sentiment(parsed_and_scored_news, ticker):
     fig2 = px.line(mean_scores, x=datetime_index, y='sentiment_score', markers=True,color='color',
                    title=f'{ticker} Hourly Sentiment Scores (Green: Positive, Red: Negative)',width=1000
                   ,height=600)
+    print("_____________________________________________________")
     return fig1, fig2
 
 def plot_daily_sentiment(parsed_and_scored_news, ticker):
@@ -58,6 +59,7 @@ def plot_daily_sentiment(parsed_and_scored_news, ticker):
                    title=f'{ticker} Daily Sentiment Scores (Green: Positive, Red: Negative)',width=1000
                   ,height=600)
     print("daily2")
+    print("_____________________________________________________")
     return fig1, fig2
 
 
@@ -80,5 +82,6 @@ def create_subplot_for_dataframes(dataframes,titles):
         width=1200, 
         height=900)
     fig = go.Figure(data=traces, layout=layout)
+    print("_____________________________________________________")
     
     return fig
