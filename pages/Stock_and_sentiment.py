@@ -15,10 +15,9 @@ df=df.rename(columns={
         'Adj Close': 'Stock_Adj_Close',
         'Volume': 'Stock_Volume',
         'sentiment_score': 'Sentiment_Score',
-        'Unnamed: 0':'Date'
     })
-# df['Date']=pd.to_datetime(df['Date'])
-df=df.set_index('Date')
+df['date']=pd.to_datetime(df['date'])
+df=df.set_index('date')
 df.index=pd.to_datetime(df.index)
 st.set_page_config(page_title="MarketMoodMeter-StockAnalytics", page_icon="random", layout="wide", initial_sidebar_state="expanded")
 st.title("--Analyze how market influencing Stock prices--")

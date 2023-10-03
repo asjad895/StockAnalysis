@@ -29,27 +29,28 @@ def fetch_merge_stock_sentiment_data(ticker):
     sentiment_data=df2
     print(sentiment_data.shape)
     print(stock_data.shape)
-    stock_data.index = pd.to_datetime(stock_data.index)
+    stock_data.reset_index(drop=False, inplace=True)
+    print(stock_data.head())
+    stock_data.rename(columns={'Date': 'date'}, inplace=True)
+    merged_df = stock_data.merge(sentiment_data, on='date', how='left')
+    merged_df['sentiment_score'].bfill(inplace=True)
     # print(stock_data.head())
     # print("__________________________________________________________")
-    sentiment_data = sentiment_data.set_index('date')
-    sentiment_data.index=pd.to_datetime(sentiment_data.index)
+    merged_df = merged_df.set_index('date')
+    merged_df.index=pd.to_datetime(merged_df.index)
     # sentiment_data=sentiment_data['sentiment_score']
     # print(sentiment_data.index)
     # print(stock_data.index)
-    stock_data = stock_data.sort_index()
-    sentiment_data = sentiment_data.sort_index()
-    print("Preprocessed:Sentiment Data-------------------------")
-    print(sentiment_data.shape)
-    print(stock_data.shape)
-    ls=sentiment_data.shape[0]
-    stock_data['sentiment_score'] = np.nan
-    stock_data.iloc[:ls, -1] = sentiment_data['sentiment_score'].values
-    stock_data['sentiment_score'].ffill(inplace=True)
+    # stock_data = stock_data.sort_index()
+    # sentiment_data = sentiment_data.sort_index()
+    print("Preprocessed:Sentiment Data-------------------------\n")
+    # ls=sentiment_data.shape[0]
+    # stock_data['sentiment_score'] = np.nan
+    # stock_data.iloc[:ls, -1] = sentiment_data['sentiment_score'].values
     # print(merged_data.shape)
 
     csv_file_path = os.path.join("pages/", "Stock_sent.csv")
-    stock_data.to_csv(csv_file_path)
+    merged_df.to_csv(csv_file_path)
 
     print(f"Data for {ticker} saved to {csv_file_path}")
     print("_____________________________________________________")
