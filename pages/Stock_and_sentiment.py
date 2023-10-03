@@ -3,6 +3,7 @@ import numpy as np
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 # //Data Cllection
 df=pd.read_csv('pages/Stock_sent.csv')
 # //Data cleaning
@@ -41,28 +42,22 @@ def analyze_data(merged_data):
                 st.write("Weak or no significant correlation.")
         
 def stockSent_chart(merged_data):
+    df=merged_data
     st.subheader("Visualize the trend of sentimnet score with stock price")
     fig = go.Figure()
-    for column in merged_data.columns:
-        if column != 'Date':
-            if column != 'Sentiment_Score':
-                fig.add_trace(go.Scatter(x=merged_data.index, y=merged_data[column], mode='lines', name=column))
-            else:
-                fig.add_trace(go.Scatter(x=merged_data.index, y=merged_data[column], mode='lines', name=column, yaxis='y2'))
-    fig.update_layout(
-        title="Compare all things in once",
-        xaxis_title="Date",
-        yaxis_title="Value (Primary Axis)",
-        yaxis2=dict(
-            title="Sentiment Score (Secondary Axis)",
-            overlaying='y',
-            side='right'
-        ),
-        legend=dict(x=0, y=1),
-        width=1200,height=600
-    )
-
-    # Display the chart
+    fig = make_subplots(rows=5, cols=1, shared_xaxes=True, vertical_spacing=0.04)
+    fig.add_trace(go.Scatter(x=df.index, y=df['Stock_Open'], mode='lines', name='Open Price'), row=1, col=1)
+    fig.add_trace(go.Scatter(x=df.index, y=df['Stock_High'], mode='lines', name='High Price'), row=2, col=1)
+    fig.add_trace(go.Scatter(x=df.index, y=df['Stock_Low'], mode='lines', name='Low Price'), row=3, col=1)
+    fig.add_trace(go.Scatter(x=df.index, y=df['Stock_Volume'], mode='lines', name='volume'), row=4, col=1)
+    fig.add_trace(go.Scatter(x=df.index, y=df['Sentiment_Score'], mode='lines', name='Sentiment score'), row=5, col=1)
+    fig.update_xaxes(title_text='Date', row=5, col=1)
+    fig.update_yaxes(title_text='Open', row=1, col=1)
+    fig.update_yaxes(title_text='High ', row=2, col=1)
+    fig.update_yaxes(title_text='Low ', row=3, col=1)
+    fig.update_yaxes(title_text='volume ', row=4, col=1)
+    fig.update_yaxes(title_text='Sentiment Score ', row=5, col=1)
+    fig.update_layout(title_text='Price Time Series', showlegend=True,width=1200,height=600)
     st.plotly_chart(fig)    
 analyze_data(df)
 

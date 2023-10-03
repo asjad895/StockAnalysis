@@ -1,5 +1,20 @@
 date,headline,neg,neu,pos,sentiment_score,day_of_week,week
-2023-10-02,"These Stocks Are Moving the Most Today: Tesla, Rivian, AMC, Sphere Entertainment, Apple, and More",0.0,0.833,0.167,0.4215,Monday,41
+2023-10-03,3 Things About Apple That Smart Investors Know,0.0,0.69,0.31,0.4019,Tuesday,41
+2023-10-03,Factbox-European regulators crack down on Big Tech,0.0,1.0,0.0,0.0,Tuesday,41
+2023-10-03,Better Buy: Amazon vs. Apple,0.0,0.395,0.605,0.5574,Tuesday,41
+2023-10-03,Apple enforces new check on apps in China as Beijing tightens oversight,0.0,1.0,0.0,0.0,Tuesday,41
+2023-10-02,Nvidia & Apple: What the charts show about the tech giants,0.0,1.0,0.0,0.0,Monday,41
+2023-10-02,Apple iPhone 15 Pro Lead Times Shorten As Supply Catches Up With Demand,0.111,0.889,0.0,-0.128,Monday,41
+2023-10-02,"These Stocks Are Moving the Most Today: Tesla, Rivian, Discover, Sphere Entertainment, Nvidia, and More",0.0,0.833,0.167,0.4215,Monday,41
+2023-10-02,Microsoft Was Willing to Drop Bing Name to Nab Apple Search Deal,0.16,0.84,0.0,-0.2732,Monday,41
+2023-10-02,Microsoft CEO Says Googles Agreements With Apple Unfairly Harmed Bing,0.235,0.606,0.159,-0.25,Monday,41
+2023-10-02,"Falling Yields, Valuations Could Lift Mega-Cap Tech Stocks in Q4",0.151,0.849,0.0,-0.1531,Monday,41
+2023-10-02,Hollywood actors to resume talks with studios after conclusion of writers' strike,0.12,0.88,0.0,-0.128,Monday,41
+2023-10-02,Hollywood actors resume talks with studios after conclusion of writers' strike,0.13,0.87,0.0,-0.128,Monday,41
+2023-10-02,Microsoft CEO Says Google Search Dominance to Give It AI Edge,0.0,0.847,0.153,0.2023,Monday,41
+2023-10-02,Microsoft CEO Testifies About Limits of AI at Google Antitrust Trial,0.0,1.0,0.0,0.0,Monday,41
+2023-10-02,Warner Bros. Discovery's (WBD) REAL TIME WITH BILL MAHER Returns,0.0,1.0,0.0,0.0,Monday,41
+2023-10-02,Wall Street Bulls Look Optimistic About Apple (AAPL): Should You Buy?,0.0,0.813,0.187,0.3182,Monday,41
 2023-10-02,"Apple Is a Magnificent Stock, But There Are 2 Big Reasons Investors Could Regret Buying It Right Now",0.184,0.695,0.122,-0.3071,Monday,41
 2023-10-02,Qualcomm (QCOM) Remains in Spotlight Throughout September,0.0,1.0,0.0,0.0,Monday,41
 2023-10-02,5 Things to Know Before Markets Open,0.0,1.0,0.0,0.0,Monday,41
@@ -84,18 +99,3 @@ date,headline,neg,neu,pos,sentiment_score,day_of_week,week
 2023-09-27,iPhone 15 Pro Owners Complain About Overheating Problems,0.464,0.536,0.0,-0.6369,Wednesday,40
 2023-09-27,Apple iPhone 15 Pro Users Complain That Device Can Get Too Hot,0.185,0.815,0.0,-0.3612,Wednesday,40
 2023-09-27,Apple (AAPL) Stock Sinks As Market Gains: What You Should Know,0.0,0.806,0.194,0.34,Wednesday,40
-2023-09-27,"Meta unveils new AR/VR headseat, smart glasses",0.0,0.69,0.31,0.4019,Wednesday,40
-2023-09-27,Facebook Needs to Continue Covering Metas Expensive Quest,0.0,1.0,0.0,0.0,Wednesday,40
-2023-09-27,Apple is ordered to face Apple Pay antitrust lawsuit,0.32,0.68,0.0,-0.3182,Wednesday,40
-2023-09-27,Meta Goes Head-to-Head with Apple with its New Quest 3 Headset,0.0,1.0,0.0,0.0,Wednesday,40
-2023-09-27,Tim Cook's net worth: How much the Apple CEO's stock is worth,0.0,0.725,0.275,0.4215,Wednesday,40
-2023-09-27,"Apple leverages idea of switching to Bing to pry more money out of Google, Microsoft exec says",0.0,1.0,0.0,0.0,Wednesday,40
-2023-09-27,Epic Games asks US Supreme Court to review Apple antitrust case,0.0,0.735,0.265,0.5574,Wednesday,40
-2023-09-27,"Meta unveils Meta Quest 3 headset, Ray-Ban Meta smart glasses",0.0,0.748,0.252,0.4019,Wednesday,40
-2023-09-27,"Meta Rolls Out Higher-Priced Quest 3 Headset, Just Ahead of Apples Vision Pro",0.0,0.846,0.154,0.25,Wednesday,40
-2023-09-27,Microsoft Says Apple Used Bing as Google Bargaining Chip,0.0,1.0,0.0,0.0,Wednesday,40
-2023-09-27,Best Dow Jones Stocks To Buy And Watch In September 2023: Apple Hits Recent Low,0.109,0.674,0.218,0.4767,Wednesday,40
-2023-09-27,British designer of the iPhone explores plan for AI gadget,0.0,1.0,0.0,0.0,Wednesday,40
-2023-09-27,"Apple Defends Its $19B Google Search Deal, Hollywood's Writers Secure Credit For AI Training, China's Ambitious Chip Fund Faces Headwinds: Today's Top Stories",0.0,0.657,0.343,0.836,Wednesday,40
-2023-09-27,There's only one smartphone brand selling more devices in Q2 and it isn't who you might think,0.0,1.0,0.0,0.0,Wednesday,40
-2023-09-27,"Blockbuster report of OpenAIs talks with iPhone designer Jony Ive about an AI hardware device suggests he wants a front-row seat for the AI revolution, top analyst says",0.0,0.814,0.186,0.6908,Wednesday,40
